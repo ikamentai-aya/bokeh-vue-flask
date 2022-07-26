@@ -1,0 +1,126 @@
+6.2
+
+Design Implications
+
+society with the ability of online social media to spread information
+quickly. Combating misinformation is an essential but also challenging task. In this paper, we choose two commonly used methods in
+narrative visualization as candidates of defensive designs. Our study
+results show the potential of these two and other similar methods to
+be a part of the force to combat misinformation. Also, the number
+of people who do not find misinformation in our study again let us
+notice the challenge of fighting an infodemic.
+
+In the crowdsourcing study, our qualitative analysis of participants’
+feedback provides insights into several design implications to mitigate misinformation in narrative visualization, as presented below.
+Visual Design to Guide Attention Most participants in our experiment attribute their failure to find misinformation to their inattention (Table 4). Pennycook et al. [46] postulate that directing
+people’s attention to the accuracy of news can be a promising way
+to combat misinformation. Consistent with this insights, our results
+indicate that a promising design direction is to lead readers to attend
+to the part(s) of stories where misinformation is prone to appear.
+Such designs could potentially be a cure to “overlooking violation of
+visualization conventions” and “misinterpreting the visualization”.
+Data-Friendly Text Text is an important component of narrative
+visualization, and researchers should rethink how its presentation
+can be improved to mitigate misinformation. Our qualitative analysis reveals that text might cause misperception in readers, thereby
+leaving problematic messages in the stories unnoticed (e.g., “excessive trust in text” and “misunderstanding the reference relationship”
+in Table 4). Empirical evidence implies that whether textual description is closely linked to the data can affect reader understanding of
+the data story [39]. A data-oriented narrative style of text, such as
+emphasizing the data source, clearly expressing the analysis method
+of the data, and more accurately specifying the visual elements of
+the discussion, may facilitate readers’ judgment of the facts [41].
+Knowledge-Augmented Visualization Some participants believe that the reason why they do not discover misinformation is a
+lack of understanding of visualization or the background of the story
+(“Lacking Prior Knowledge” in Table 4). A feasible way to address
+this problem is to augment the original narrative visualization with
+external knowledge. Similar ideas have been applied to improve
+awareness of diverse social opinions [18].
+6.3
+
+ACKNOWLEDGMENTS
+We thank Yujie Zheng for valuable input. We also thank the anonymous reviewers for their feedback and comments that helped improve this paper.
+R EFERENCES
+[1] A. Andreou. Comparing the gov’t covid19 maps for end of september
+and start of october, it looks as if things are getting better.until you
+notice they’ve changed the numbers corresponding to each colour.
+had they used the same ones, most of the country would be red or
+dark red.#bitsneaky pic.twitter.com/61u1dd4g1u. https://twitte
+r.com/sturdyAlex/status/1314563677144657922, Oct 2020.
+Accessed: March 31, 2021.
+[2] B. Bach, Z. Wang, M. Farinella, D. Murray-Rust, and N. Henry Riche.
+Design patterns for data comics. In Proceedings of the ACM Conference
+on Human Factors in Computing Systems, pp. 1–12, 2018.
+[3] R. Borgo, L. Micallef, B. Bach, F. McGee, and B. Lee. Information
+visualization evaluation using crowdsourcing. In Computer Graphics
+Forum, vol. 37, pp. 573–595. Wiley Online Library, 2018.
+[4] V. Braun and V. Clarke. Thematic analysis. 2012.
+[5] C. Bryan, K.-L. Ma, and J. Woodring. Temporal summary images: An
+approach to narrative visualization via interactive annotation generation
+and placement. IEEE transactions on visualization and computer
+graphics, 23(1):511–520, 2016.
+[6] M. Canham and M. Hegarty. Effects of knowledge and display design
+on comprehension of complex graphics. Learning and Instruction,
+20(2):155–166, 2010.
+[7] Q. Chen, F. Sun, X. Xu, Z. Chen, J. Wang, and N. Cao. Vizlinter: A
+linter and fixer framework for data visualization. IEEE transactions on
+visualization and computer graphics, 2021.
+[8] S. Chen, J. Li, G. Andrienko, N. Andrienko, Y. Wang, P. H. Nguyen,
+and C. Turkay. Supporting story synthesis: Bridging the gap between
+visual analytics and storytelling. IEEE Transactions on Visualization
+and Computer Graphics, 26(7):2499–2516, 2018.
+[9] W.-Y. S. Chou, A. Oh, and W. M. Klein. Addressing health-related
+misinformation on social media. Jama, 320(23):2417–2418, 2018.
+[10] A. Cockburn, C. Gutwin, and A. Dix. Hark no more: on the preregistration of chi experiments. In Proceedings of the ACM Conference on
+Human Factors in Computing Systems, pp. 1–12, 2018.
+[11] J. Cook, P. Ellerton, and D. Kinkead. Deconstructing climate misinformation to identify reasoning errors. Environmental Research Letters,
+13(2):024018, Feb. 2018.
+[12] M. Correll and J. Heer. Surprise! bayesian weighting for de-biasing
+thematic maps. IEEE Transactions on Visualization and Computer
+Graphics, 23(1):651–660, 2016.
+[13] M. Correll and J. Heer. Black hat visualization. In Workshop on
+Dealing with Cognitive Biases in Visualisations (DECISIVe), IEEE VIS,
+2017.
+[14] S. Doan. Misrepresenting covid-19: Lying with charts during the
+second golden age of data design. Journal of Business and Technical
+Communication, 35(1):73–79, 2021.
+[15] U. K. Ecker, B. Swire, and S. Lewandowsky. Correcting misinformation—a challenge for education and cognitive science. 2014.
+[16] D. Feenberg, I. Ganguli, P. Gaule, and J. Gruber. It’s good to be
+first: Order bias in reading and citing nber working papers. Review of
+Economics and Statistics, 99(1):32–39, 2017.
+[17] S. N. Friel, F. R. Curcio, and G. W. Bright. Making sense of graphs:
+Critical factors influencing comprehension and instructional implications. Journal for Research in Mathematics Education, 32(2):124–158,
+2001.
+
+Limitation and Future Work
+
+Our study bears several limitations. First, we conducted experiments
+on three types of misinformation covering only two of the many
+causes of misinformation we identified in Table 1 (Break Conventions and Text-visualization misalignment). Our study material is
+only concerned with two visualization types (i.e., bar chart and line
+chart). It is worth conducting experiments to understand what defensive designs can be effective to other causes of misinformation such
+as Manipulating order and Obfuscation as well as narrative visualizations with more diverse visualization types in the future. Second,
+we did not randomize the type of misinformation for each story in
+the experiment to prevent the misinformation from being too obvious to see from the common knowledge. Such design, however, can
+affect the effectiveness of our analysis in comparing different kinds
+of misinformation but not the conclusion about the two defensive
+designs, which is the focus of this paper. Third, our measurements
+to participants’ awareness of misinformation can be improved. We
+analyzed their awareness based on their reflection after reading stories. More accurate measurements can be derived from other data
+collecting methods such as eye-tracking. Last but not least, we found
+Annotation and Linking do have effects, but we do not gain insights
+into how they work from our data. We hypothesize that they work
+by affecting readers’ attention, which requires more investigation.
+In the future, we will experiment with adopting instruments such as
+implicit measurement methods in psychology [25] to obtain more
+accurate assessment of readers’ awareness of misinformation. We
+will further test readers’ recall of the story and their potential attitude
+shift to discern the extent of impact of awareness.
+7
+
+C ONCLUSION
+
+We introduce how misinformation can be injected into narrative visualization and explore possible defensive design methods to combat
+misinformation. Misinformation has been ever dangerous to human
+
+149
+
+

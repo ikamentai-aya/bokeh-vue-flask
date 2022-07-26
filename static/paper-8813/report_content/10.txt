@@ -1,0 +1,137 @@
+[18] M. Gao, H. J. Do, and W.-T. Fu. Burst your bubble! an intelligent
+system for improving awareness of diverse social opinions. In 23rd
+International Conference on Intelligent User Interfaces, pp. 371–383,
+2018.
+[19] R. K. Garrett, S. D. Gvirsman, B. K. Johnson, Y. Tsfati, R. Neo,
+and A. Dal. Implications of pro-and counterattitudinal information
+exposure for affective polarization. Human Communication Research,
+40(3):309–332, 2014.
+[20] B. Guo, Y. Ding, L. Yao, Y. Liang, and Z. Yu. The future of false
+information detection on social media: New perspectives and trends.
+ACM Comput. Surv., 53(4), July 2020. doi: 10.1145/3393880
+[21] Y. Guo, C. Binnig, and T. Kraska. What you see is not what you get!
+detecting simpson’s paradoxes during data exploration. In Proceedings
+of the 2nd Workshop on Human-In-the-Loop Data Analytics, pp. 1–5,
+2017.
+[22] J. Hullman and N. Diakopoulos. Visualization rhetoric: Framing effects
+in narrative visualization. IEEE Transactions on Visualization and
+Computer Graphics, 17(12):2231–2240, 2011. doi: 10.1109/TVCG.
+2011.255
+[23] J. Hullman, S. Drucker, N. H. Riche, B. Lee, D. Fisher, and E. Adar.
+A deeper understanding of sequence in narrative visualization. IEEE
+Transactions on Visualization and Computer Graphics, 19(12):2406–
+2415, 2013.
+[24] P. Johnston. Prior knowledge and reading comprehension test bias.
+Reading Research Quarterly, pp. 219–239, 1984.
+[25] A. Karpinski and J. L. Hilton. Attitudes and the implicit association
+test. Journal of Personality and Social Psychology, 81(5):774, 2001.
+[26] H.-K. Kong, Z. Liu, and K. Karahalios. Frames and slants in titles
+of visualizations on controversial topics. In Proceedings of the ACM
+Conference on Human Factors in Computing Systems, pp. 1–12, 2018.
+[27] H.-K. Kong, Z. Liu, and K. Karahalios. Trust and recall of information
+across varying degrees of title-visualization misalignment. In Proceedings of the ACM Conference on Human Factors in Computing Systems,
+pp. 1–13, 2019.
+[28] N. Kong, M. A. Hearst, and M. Agrawala. Extracting references
+between text and charts via crowdsourcing. In Proceedings of the
+SIGCHI conference on Human Factors in Computing Systems, pp.
+31–40, 2014.
+[29] B. C. Kwon, F. Stoffel, D. Jäckle, B. Lee, and D. Keim. Visjockey:
+Enriching data stories through orchestrated interactive visualization. In
+Poster compendium of the computation+ journalism symposium, vol. 3,
+p. 3, 2014.
+[30] C. Lai, Z. Lin, R. Jiang, Y. Han, C. Liu, and X. Yuan. Automatic
+annotation synchronizing with textual description for visualization. In
+Proceedings of the ACM Conference on Human Factors in Computing
+Systems, pp. 1–13, 2020.
+[31] C. Lauer and S. O’Brien. How people are influenced by deceptive tactics in everyday charts and graphs. IEEE Transactions on Professional
+Communication, 63(4):327–340, 2020.
+[32] P.-M. Law, L. Y.-H. Lo, A. Endert, J. Stasko, and H. Qu. Causal
+perception in question-answering systems. In Proceedings of the 2021
+CHI Conference on Human Factors in Computing Systems, pp. 1–15,
+2021.
+[33] B. Lee, N. H. Riche, P. Isenberg, and S. Carpendale. More than telling
+a story: Transforming data into visually shared stories. IEEE Computer
+Graphics and Applications, 35(5):84–90, 2015. doi: 10.1109/MCG.
+2015.99
+[34] C. Lee, T. Yang, G. Inchoco, G. M. Jones, and A. Satyanarayan. Viral
+visualizations: How coronavirus skeptics use orthodox data practices to
+promote unorthodox science online. arXiv preprint arXiv:2101.07993,
+2021.
+[35] H. Matute, F. Blanco, I. Yarritu, M. Dı́az-Lago, M. A. Vadillo, and
+I. Barberia. Illusions of causality: how they bias our everyday thinking
+and how they could be reduced. Frontiers in Psychology, 6:888, 2015.
+[36] S. McKenna, N. Henry Riche, B. Lee, J. Boy, and M. Meyer. Visual
+narrative flow: Exploring factors shaping data visualization story reading experiences. In Computer Graphics Forum, vol. 36, pp. 377–387.
+Wiley Online Library, 2017.
+[37] A. McNutt, G. Kindlmann, and M. Correll. Surfacing visualization
+mirages. In Proceedings of the ACM Conference on Human Factors in
+
+Computing Systems, p. 1–16, 2020. doi: 10.1145/3313831.3376420
+[38] P. C. Meirick. Motivated misperception? party, education, partisan
+news, and belief in “death panels”. Journalism & Mass Communication
+Quarterly, 90(1):39–57, 2013.
+[39] L. Micallef, P. Dragicevic, and J.-D. Fekete. Assessing the effect of
+visualizations on bayesian reasoning through crowdsourcing. IEEE
+Transactions on Visualization and Computer Graphics, 18(12):2536–
+2545, 2012.
+[40] NASA. Global surface temperature. https://climate.nasa.gov
+/vital-signs/global-temperature. Accessed: March 31, 2021.
+[41] H. J. Nenty. Writing a quantitative research thesis. International
+Journal of Educational Sciences, 1(1):19–32, 2009.
+[42] T. L. Network. What’s going on in this graph? — immigration shifts.
+https://www.nytimes.com/2020/04/30/learning/whatsgoing-on-in-this-graph-immigration-shifts.html, Apr.
+2020. Accessed: March 31, 2021.
+[43] A. Newman, Z. Bylinskii, S. Haroz, S. Madan, F. Durand, and A. Oliva.
+Effects of title wording on memory of trends in line graphs. Journal of
+Vision, 18(10):837–837, 2018.
+[44] A. V. Pandey, A. Manivannan, O. Nov, M. Satterthwaite, and E. Bertini.
+The persuasive power of data visualization. IEEE Transactions on
+Visualization and Computer Graphics, 20(12):2211–2220, 2014. doi:
+10.1109/TVCG.2014.2346419
+[45] A. V. Pandey, K. Rall, M. L. Satterthwaite, O. Nov, and E. Bertini.
+How deceptive are deceptive visualizations? an empirical analysis of
+common distortion techniques. In Proceedings of the ACM Conference
+on Human Factors in Computing Systems, pp. 1469–1478, 2015.
+[46] G. Pennycook, Z. Epstein, M. Mosleh, A. A. Arechar, D. Eckles, and
+D. G. Rand. Shifting attention to accuracy can reduce misinformation
+online. Nature, pp. 1–6, 2021.
+[47] R. E. Petty and J. T. Cacioppo. Communication and persuasion: Central and peripheral routes to attitude change. Springer Science &
+Business Media, 2012.
+[48] T. W. Post. 75 years of major refugee crises around the world. https:
+//www.washingtonpost.com/graphics/world/historical-m
+igrant-crisis. Accessed: January 15, 2021.
+[49] J. Roozenbeek, C. R. Schneider, S. Dryhurst, J. Kerr, A. L. Freeman,
+G. Recchia, A. M. Van Der Bles, and S. Van Der Linden. Susceptibility
+to misinformation about covid-19 around the world. Royal Society
+Open Science, 7(10):201199, 2020.
+[50] D. Sacha, H. Senaratne, B. C. Kwon, G. Ellis, and D. A. Keim. The
+role of uncertainty, awareness, and trust in visual analytics. IEEE
+Transactions on Visualization and Computer Graphics, 22(1):240–249,
+2015.
+[51] E. Segel and J. Heer. Narrative visualization: Telling stories with
+data. IEEE Transactions on Visualization and Computer Graphics,
+16(6):1139–1148, 2010.
+[52] D. Shi, X. Xu, F. Sun, Y. Shi, and N. Cao. Calliope: Automatic
+visual data story generation from a spreadsheet. IEEE Transactions on
+Visualization and Computer Graphics, 2020.
+[53] A. Stevenson. Oxford dictionary of English. Oxford University Press,
+USA, 2010.
+[54] E. Wall, L. M. Blaha, L. Franklin, and A. Endert. Warning, bias may
+occur: A proposed approach to detecting cognitive bias in interactive
+visual analytics. In IEEE Conference on Visual Analytics Science and
+Technology (VAST), pp. 104–115, 2017. doi: 10.1109/VAST.2017.
+8585669
+[55] Z. Wang, S. Wang, M. Farinella, D. Murray-Rust, N. Henry Riche, and
+B. Bach. Comparing effectiveness and engagement of data comics
+and infographics. In Proceedings of the ACM Conference on Human
+Factors in Computing Systems, pp. 1–12, 2019.
+[56] L. Wu, F. Morstatter, K. M. Carley, and H. Liu. Misinformation in
+social media: definition, manipulation, and detection. ACM SIGKDD
+Explorations Newsletter, 21(2):80–90, 2019.
+[57] Q. Zhi, A. Ottley, and R. Metoyer. Linking and layout: Exploring
+the integration of text and visualization in storytelling. In Computer
+Graphics Forum, vol. 38, pp. 675–685. Wiley Online Library, 2019.
+
+150
+
+

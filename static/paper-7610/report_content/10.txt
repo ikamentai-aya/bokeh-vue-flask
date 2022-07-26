@@ -1,0 +1,123 @@
+trends, and spatial distribution of various attributes. We demonstrate
+the functionality of S ET-S TAT-M AP using real-life datasets.
+Although S ET-S TAT-M AP is currently a research prototype, we
+plan to make our web-based implementation available to the developers through open-source software repositories. We believe
+our approach to visualizing mixed data will inspire future work in
+visualization and interface design to explore heterogeneous datasets.
+
+[21] X. He, Y. Tao, Q. Wang, and H. Lin. Multivariate spatial data visualization: a survey. J. of Visualization, 22(5):897–912, 2019. doi: 10.
+1007/s12650-019-00584-3
+[22] C. G. Healey and J. T. Enns. Large datasets at a glance: Combining
+textures and colors in scientific visualization. IEEE transactions on
+visualization and computer graphics, 5(2):145–167, 1999.
+[23] C. G. Healey and J. T. Enns. Attention and visual memory in visualization and computer graphics. IEEE Trans. Vis. Comput. Graph.,
+18(7):1170–1188, 2012. doi: 10.1109/TVCG.2011.127
+[24] J. Heinrich and D. Weiskopf. State of the art of parallel coordinates. In
+M. Sbert and L. Szirmay-Kalos, eds., Proc. of European Association
+for Computer Graphics (Eurographics), pp. 95–116. Eurographics
+Association, 2013.
+[25] A. Inselberg and B. Dimsdale. Parallel coordinates: A tool for visualizing multi-dimensional geometry. In A. E. Kaufman, ed., Proc. of IEEE
+Visualization Conference, San Francisco, CA, USA, October 23-26,
+1990, pp. 361–378. IEEE, 1990. doi: 10.1109/VISUAL.1990.146402
+[26] B. Jacobsen, M. Wallinger, S. G. Kobourov, and M. Nöllenburg. Metrosets: Visualizing sets as metro maps. IEEE Trans. Vis. Comput.
+Graph., 27(2):1257–1267, 2021.
+[27] R. Kosara, F. Bendix, and H. Hauser. Parallel sets: Interactive exploration and visual analysis of categorical data. IEEE Trans. Vis. Comput.
+Graph., 12(4):558–568, 2006. doi: 10.1109/TVCG.2006.76
+[28] A. Lex, N. Gehlenborg, H. Strobelt, R. Vuillemot, and H. Pfister. Upset:
+Visualization of intersecting sets. IEEE Trans. Vis. Comput. Graph.,
+20(12):1983–1992, 2014. doi: 10.1109/TVCG.2014.2346248
+[29] F. Liu and R. W. Picard. Periodicity, directionality, and randomness:
+Wold features for image modeling and retrieval. IEEE transactions on
+pattern analysis and machine intelligence, 18(7):722–733, 1996.
+[30] D. Mondal, M. Mondal, C. K. Roy, K. A. Schneider, Y. Li, and S. Wang.
+Clone-world: A visual analytic system for large scale software clones.
+Vis. Informatics, 3(1):18–26, 2019. doi: 10.1016/j.visinf.2019.03.003
+[31] T. Munzner. Visualization Analysis and Design. A.K. Peters visualization series. A K Peters, 2014.
+[32] J. C. Roberts. State of the art: Coordinated multiple views in exploratory visualization. In Proc. of International Conference on Coordinated and Multiple Views in Exploratory Visualization (CMV 2007),
+pp. 61–71, 2007. doi: 10.1109/CMV.2007.20
+[33] S. Sadri, M. Pan, Y. Wada, N. Vergopolan, J. Sheffield, J. S. Famiglietti,
+Y. Kerr, and E. Wood. A global near-real-time soil moisture index
+monitor for food security using integrated SMOS and SMAP. Remote
+Sensing of Environment, 246(7):111864, 2020.
+[34] M. Sarkar, S. S. Snibbe, O. J. Tversky, and S. P. Reiss. Stretching the
+rubber sheet: A metaphor for viewing large layouts on small screens.
+In S. E. Hudson, R. Pausch, B. T. V. Zanden, and J. D. Foley, eds.,
+Proc. of ACM Symposium on User Interface Software and Technology
+(UIST), Atlanta, GA, USA, pp. 81–91. ACM, November 3-5, 1993. doi:
+10.1145/168642.168650
+[35] G. Sharma and R. Bala. Digital color imaging handbook. CRC press,
+2017.
+[36] H. H. Shenas and V. Interrante. Compositing color with texture for
+multi-variate visualization, 2005.
+[37] H. Tamura, S. Mori, and T. Yamawaki. Textural features corresponding to visual perception. IEEE Transactions on Systems, man, and
+cybernetics, 8(6):460–473, 1978.
+[38] C. Ware. Information Visualization, Second Edition: Perception for
+Design (Interactive Technologies). 04 2004.
+[39] K. Wu and S. Zhang. Visualizing 2D scalar fields with hierarchical
+topology, 2015.
+[40] G. M. H. Zahan, D. Mondal, and C. Gutwin. Contour line stylization
+to visualize multivariate information. In Proc. of Graphics Interface
+Conference (GI), pp. 198 – 207, 2021.
+
+ACKNOWLEDGMENTS
+This research was undertaken thanks in part to funding from the
+Canada First Research Excellence Fund. D. Mondal would like to
+thank Purbasha Mistry for stimulating discussion.
+R EFERENCES
+[1] airbnb-data – tom slee.
+https://tomslee.net/category/
+airbnb-data.
+[2] D3.js - data-driven documents. https://d3js.org/.
+[3] Stencil. https://stenciljs.com/.
+[4] Textures.js. https://riccardoscalco.it/textures/.
+[5] tomslee/airbnb-data-collection: Data collection for airbnb listings.
+https://github.com/tomslee/airbnb-data-collection.
+[6] Weather data (SWAT). https://globalweather.tamu.edu/.
+[7] Geo-coordinated parallel coordinates (GCPC): Field trial studies of
+environmental data analysis. Visual Informatics, 2(2):111 – 124, 2018.
+[8] Z. Ahmed, M. Beyene, D. Mondal, C. K. Roy, C. Dutchyn, and K. A.
+Schneider. Contourdiff: Revealing differential trends in spatiotemporal
+data. In Proc. of Information Visualisation (IV), pp. 35–41. IEEE, 2021.
+doi: 10.1109/IV53921.2021.00016
+[9] B. Alper, N. H. Riche, G. A. Ramos, and M. Czerwinski. Design
+study of linesets, a novel set visualization technique. IEEE Trans. Vis.
+Comput. Graph., 17(12):2259–2267, 2011. doi: 10.1109/TVCG.2011.
+186
+[10] B. Alsallakh, L. Micallef, W. Aigner, H. Hauser, S. Miksch, and P. J.
+Rodgers. Visualizing sets and set-typed data: State-of-the-art and future
+challenges. In Proc. of Eurographics Conference on Visualization
+(EuroVis), Swansea, UK, June 9-13, 2014. Eurographics Association,
+2014. doi: 10.2312/eurovisstar.20141170
+[11] B. Alsallakh, L. Micallef, W. Aigner, H. Hauser, S. Miksch, and P. J.
+Rodgers. The state-of-the-art of set visualization. Comput. Graph.
+Forum, 35(1):234–260, 2016. doi: 10.1111/cgf.12722
+[12] M. Q. W. Baldonado, A. Woodruff, and A. Kuchinsky. Guidelines
+for using multiple views in information visualization. In Proceedings
+of the working conference on Advanced visual interfaces (AVI), pp.
+110–119. ACM Press, 2000.
+[13] J. Blaas, C. Botha, and F. Post. Extensions of parallel coordinates
+for interactive exploration of large multi-timepoint data sets. IEEE
+Transactions on Visualization and Computer Graphics, 14(6):1436–
+1451, 2008. doi: 10.1109/TVCG.2008.131
+[14] L. A. Bruckner. On chernoff faces. In Graphical representation of
+multivariate data, pp. 93–121. Elsevier, 1978.
+[15] C. Collins, G. Penn, and S. Carpendale. Bubble Sets: revealing set
+relations with isocontours over existing visualizations. IEEE Trans. Vis.
+Comput. Graph., 15(6):1009–1016, 2009. doi: 10.1109/TVCG.2009.
+122
+[16] P. C. Dodwell and G. K. Humphrey. A functional theory of the mccollough effect. Psychological Review, 97(1):78–89, 1990.
+[17] D. Dorling, A. Barford, and M. Newman. WORLDMAPPER: the world
+as you’ve never seen it before. IEEE transactions on visualization and
+computer graphics, 12(5):757–764, 2006.
+[18] D. A. Ellsworth, C. E. Henze, and B. C. Nelson. Interactive visualization of high-dimensional petascale ocean data. In Proc. of IEEE
+Symposium on Large Data Analysis and Visualization (LDAV), pp.
+36–44. IEEE, 2017.
+[19] S. Gratzl, A. Lex, N. Gehlenborg, H. Pfister, and M. Streit. LineUp:
+visual analysis of multi-attribute rankings. IEEE Trans. Vis. Comput.
+Graph., 19(12):2277–2286, 2013. doi: 10.1109/TVCG.2013.173
+[20] N. Gurran and P. Phibbs. When tourists move in: How should urban planners respond to airbnb? Journal of The American Planning
+Association, 83(1):80–92, 2017.
+
+160
+
+

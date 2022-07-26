@@ -1,0 +1,88 @@
+A1
+
+B
+
+A2
+
+C
+
+Figure 4: (A1) the Carbon Emission story under the Static condition; (A2) the Carbon Emission story under the Annotation condition; (B) the
+COVID-19 story under the Annotation condition; (C) the Obesity story under the Linking condition.
+
+tences that reference the visualization are highlighted. When
+users hover over the highlighted text, its corresponding part
+of the visualization will be spotlighted by changing to colour
+more salient than that of the rest.
+4.3
+
+As mentioned above, the text component of each data story contains a single sentence that explicitly states the misinformation. Although the misleading sentence is only part of a complete data story,
+it is central to the conveyed message, either to convince readers
+that the epidemic is under controlled (COVID-19 story), or to lower
+the dangerous of obesity (Obesity story), or to exaggerate China’s
+negative impact (Carbon Emission story).
+Besides, we assign each misinformation to a specific story to
+avoid finding it too easy. For example, suppose we inject Inverted
+Axis to the Obesity story and rank the number of death caused by
+air pollution higher than that by high blood pressure. In that case,
+readers can find the misinformation easily by common knowledge.
+We want to observe the impact of the design methods used and lower
+the impact of other factors.
+
+Misinformation Injection
+
+We concentrate on AIRDM in the scope of this work. For each story
+in our study, we select one type of misinformation to inject into
+its production-consumption pipeline as described in the previous
+section. In particular, we choose to introduce misinformation caused
+by deceptive visualization and text-visualization misalignment as
+they have received wide discussions in the research community and
+have already demonstrated negative impact on the society [27,31,45].
+To be more specific, we instill Contradictory Slant – a form
+of text-visualization misalignment – into the COVID-19 story by
+adding a sentence stating that the number of infections is declining
+attributed to the Brazilian government while the number shown in
+the line chart is actually rising. The contradictory slant is an easy-tospot text-visualization misalignment; still, many people fail to find
+such misinformation [27].
+We apply two forms of deceptive visualization to the Obesity
+story and the Carbon Emission story, respectively, namely Truncated Axis and Inverted Axis. Both of them are popular deceptive
+techniques for visualization and have been thoroughly discussed in
+previous works [45]. In the Obesity story, by truncating the X-axis
+of the horizontal bar chart, we make the risk of obesity seem much
+smaller (in comparison with the real number) than that of smoking
+to go with the claim in the text. In the Carbon Emission story, we
+make China’s per capital carbon emissions appear the highest in
+the bar chart while its value is actually the smallest by inverted the
+Y-axis. We compared China with Japan and Germany in their carbon
+emission control performance in the text. Note that in narrative visualization, Truncated Axis and Inverted Axis can be considered as
+special forms of Contradictory Slant, as the text in all three types
+of misinformation is not aligned with the visualization. However,
+the deceptive visual elements in Truncated Axis and Inverted Axis
+make it more challenging for readers to find the misinformation.
+
+4.4
+
+Participants
+
+We conducted the between-subjects experiment on Amazon Mechanical Turk (MTurk), a popular crowdsourcing platform [3] with
+lay public. We set the following inclusion criteria for selecting participants to ensure the quality of the study: 1) number of Human
+Intelligence Tasks (HIT)’ approved greater than 1000; 2) 97% or
+above HIT approval rate, and 3) self-reported to be in the United
+States. In total we received the responses from 313 unique participants. Based on the filtering criterion stated in Sec. 4.6, we filtered
+out 91 responses. The resulting dataset includes 222 responses,
+with 98 females and 124 males. Each condition was tested by 74
+participants. All participants signed a consent form that present
+the procedure of the study and data we would collect prior to the
+study. The mean age of participants was 40 years old (20 to 65).
+Majority of the participants (72.072%) have a bachelor’s degree or
+above. Each HIT took approximately 20 minutes to complete, and
+the participants received a compensation of US $2.5.
+4.5
+
+Procedure
+
+Participants went through our study following the steps as presented
+in Fig. 5. Each of them read the three data stories under one randomassigned condition (i.e., Static, Linking or Annotation). They com-
+
+145
+
+

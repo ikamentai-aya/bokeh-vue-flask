@@ -1,0 +1,90 @@
+2022 IEEE 15th Pacific Visualization Symposium (PacificVis)
+
+SET-STAT-MAP: Extending Parallel Sets for Visualizing Mixed Data
+Shisong Wang*
+
+Debajyoti Mondal†
+
+Sara Sadri‡
+Chanchal K. Roy§
+Kevin A. Schneider||
+
+James S. Famiglietti¶
+
+University of Saskatchewan, Canada
+
+Figure 1: A S ET-S TAT-M AP visualization for a meteorological dataset over Canadian Prairies.
+
+A BSTRACT
+
+1
+
+Multi-attribute dataset visualizations are often designed based on
+attribute types, i.e., whether the attributes are categorical or numerical. Parallel Sets and Parallel Coordinates are two well-known
+techniques to visualize categorical and numerical data, respectively.
+A common strategy to visualize mixed data is to use multiple information linked view, e.g., Parallel Coordinates are often augmented
+with maps to explore spatial data with numeric attributes. In this paper, we design visualizations for mixed data, where the dataset may
+include numerical, categorical, and spatial attributes. The proposed
+solution S ET-S TAT-M AP is a harmonious combination of three interactive components: Parallel Sets (visualizes sets determined by
+the combination of categories or numeric ranges), statistics columns
+(visualizes numerical summaries of the sets), and a geospatial map
+view (visualizes the spatial information). We augment these components with colors and textures to enhance users’ capability of
+analyzing distributions of pairs of attribute combinations. To improve scalability, we merge the sets to limit the number of possible
+combinations to be rendered on the display. We demonstrate the
+use of S ET-S TAT-M AP using two different types of datasets: a meteorological dataset and an online vacation rental dataset (Airbnb).
+To examine the potential of the system, we collaborated with the
+meteorologists, which revealed both challenges and opportunities
+for S ET-S TAT-M AP to be used for real-life visual analytics.
+
+Multi-attribute datasets are common in real-life data analytics scenarios and also challenging to analyze. Such data are often explored
+visually due to humans’ ability to rapidly comprehend and detect
+patterns in visual scenes. The preferred choice of visualization varies
+depending on the data attributes and tasks. For example, to visualize
+the pairwise relationships among categorical dimensions a simple
+way is to use a frequency matrix, where each entry contains a value
+representing the number of data records in the row and column category. Here an attribute may only have a few discrete values or
+categories. For numerical dimensions, which is either continuous or
+have many discrete values over a range, one can use a scatter plot
+matrix, where each cell of the matrix contains a scatterplot for corresponding row and column attribute. Some more recent approaches
+to examine multi-attribute datasets include Parallel Coordinates [25]
+and Parallel Sets [27] visualizations. These visualizations cleverly
+utilize the display space to show individual attribute information in
+a compact way, as well as provide interactivity to explore attribute
+relationship patterns.
+1.1
+
+Parallel Coordinate
+
+A Parallel Coordinates visualization represents each attribute using
+a vertical axis and each data record as an x-monotone polygonal line
+or curve intersecting these axes according to the values present in the
+record (Figure 2(a)). For a numeric dataset, a Parallel Coordinates
+visualization may provide detailed information about individual attribute as well as their pairwise relationships. For example, one
+can examine the value distribution of an attribute by examining
+the intersection points along the vertical axis. The axes are usually reorderable and one can examine potential relationship among
+two adjacent attributes by examining the visual pattern appearing
+between the corresponding vertical axes.
+Dataset with categorical attributes poses a problem to Parallel
+Coordinates since the lines can overlap each other. For example,
+consider a dataset with three attributes (X,Y, Z), each consisting
+of two categories. A Parallel Coordinates visualization of such a
+dataset will create at most 2 × 2 × 2 = 8 distinct polygonal lines
+(Figure 2(b)), even when the dataset contains hundreds of records.
+
+Index Terms: Human-centered computing—Visualization—Visualization techniques; Information Interfaces and Presentation—
+Miscellaneous
+* e-mail: sean.w@usask.ca
+† e-mail: d.mondal@usask.ca
+‡ e-mail: sara.sadri@usask.ca
+§ e-mail: chanchal.roy@usask.ca
+¶ e-mail: jay.famiglietti@usask.ca
+|| e-mail: kevin.schneider@usask.ca
+
+2165-8773/22/$31.00 ©2022 IEEE
+DOI 10.1109/PacificVis53943.2022.00024
+
+I NTRODUCTION
+
+151
+
+

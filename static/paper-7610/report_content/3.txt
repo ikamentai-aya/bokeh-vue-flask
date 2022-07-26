@@ -1,0 +1,137 @@
+portant sets into one in order to limit the number of possible set
+combinations. We also show how the selection of a category on an
+axis can provide users with an interesting spatial distribution of the
+corresponding data records on the map.
+We demonstrated the usability of S ET-S TAT-M AP with use cases
+from two different domains. We show both the strengths and weaknesses of S ET-S TAT-M AP when visualizing mixed data and provide
+guidelines to effectively use such a visualization.
+
+bars and sorting the rows by the attribute of interest gives a quick
+overview of the value distribution. However, sometimes tabular
+visualizations appear to be sparse and therefore, are not scalable
+with increasing data size. LineUp [19] takes a step further and allows
+users to examine the ranks of data records, where a rank of a record
+is determined by a weighted sum of its attribute values. To improve
+the scalability of the visualization, LineUp allows users to collapse
+columns, shows only the top 100 rows at a time whereas the rest of
+the rows are shown in a compressed manner which can be explored
+using fish-eye selection [34].
+UpSet [28] is a set visualization approach that can be used to
+examine complex multi-attribute datasets such as movie datasets.
+The user can construct a query using a visual query builder, e.g.,
+visualize movies that must include the category adventure, but not
+comedy. UpSet first constructs all possible category combinations
+(sets) that satisfy the query and then uses those as rows. The statistical summaries (e.g., average rating, release date) of each set is then
+visualized using a separate statistics column. UpSet supports multiple views, which are collapsible. For example, the users can choose
+to visualize query records in a scatter plot or simply as a data table.
+A number of matrix and network based visualizations [11] have been
+explored to further improve the scalability of set visualizations.
+
+2 R ELATED W ORK
+In this section we discuss the related research under four themes —
+axis based, set based, table based, and map based techniques.
+2.1 Axis Based Techniques
+Coordinate systems have been widely used to visualize two and three
+dimensional data for years, which proved their value of visualizing
+accuratedetails of such data. In general, for k attributes, one can construct 2k scatterplots to examine pairwise relations. Radar chart [31]
+extends the idea of coordinate systems, where each axis of which is
+put in a circular manner sharing the same origin point to overcome
+the limitation of the standard 2D or 3D Cartesian coordinate systems.
+Each data record is represented as a polygon with vertices lying
+on various axes depending on the record’s value at that dimension.
+Overlaps of the polygons can show the similarities between different
+data records. In a Parallel Coordinates visualization [25], axes are
+placed parallel to each other, where each data record is presented as
+a polygonal line. Compared to radar charts, a Parallel Coordinates
+visualization better utilizes the space use, i.e., it provides uniform
+space (instead of a cone shaped region) between a pair of adjacent
+axes, and the line patterns between adjacent axes are easily comparable since they are parallel to each other (instead of being arbitrarily
+rotated). Line overplotting (when the number of data records is
+large) and axis ordering (choosing a linear ordering that represents
+most interesting pairwise relations) are two common problems in
+a Parallel Coordinates visualization. A number of research works
+attempted to leverage Parallel Coordinate to effectively visualize
+categorical attributes. We refer interested readers to [24] for a survey
+on various extensions of Parallel Coordinates visualization.
+
+2.4
+
+Map Based Techniques
+
+Choropleth maps and proportional symbol maps [17] are commonly
+used methods to visualize spatial information on a map. Although
+they are well-suited for univariate data, color blending and texture
+patterns (for choropleth), and glyphs (for symbols) can be leveraged
+to extend these techniques for bivariate visualization. Color blending is widely used in spatial analysis to find probable correlations
+between two geospatial variables [18] and researchers have examined different ways to construct trivariate choropleth maps [35, 36]
+and even 4-variate [39] maps. Overlaying glyphs (icons, pie charts,
+and even complex textures) on a map is a popular way to visualize
+multi-attribure geospatial information [14]. Typically, glyphs are
+designed to encode data into features that can be perceived through
+preattentive visual channels [38]. Pexels, introduced by Healey and
+Enns [22], encode multi-attribute datasets into perceptual textures
+with height, density, and regularity properties. In general, texture of
+varied contrast, density, and directionality [29, 37] are often used to
+visualize multivariate data. For more details on multivariate spatial
+data visualization, we refer the reader to [8, 21, 40].
+The use of multiple coordinated views is becoming increasingly
+common in heterogeneous data analytics, e.g., environmental data
+exploration [7, 13] and multivariate network visualization [30]. One
+of the most common examples is a geographic map coordinated with
+charts or Parallel Coordinates view, where users can select a region
+of a map and examine the updated charts for the selected dataset.
+Since multiple coordinated views can visualize different aspects of
+the same dataset simultaneously, users can better comprehend the
+data. Such visualizations often lack methodological design efforts
+and the final visualization becomes a collection of charts, plots,
+tables and maps that do not look like an integral part of the overall
+visualization and may immensely increase users’ cognitive load. We
+refer the readers to [12, 32] for a rich body of research that examines
+design principles and usability issues of multiple coordinated views.
+
+2.2 Set Based Techniques
+Set based techniques for visualizing multi-attribute data construct
+sets based on various-category combinations. Parallel Sets is an interesting example, where it is possible to define a set for any category
+combination that contains one category from each attribute. Since
+Parallel Sets visualization use parallelograms to connect adjacent
+axes, the visualization quickly becomes occluded as the number
+of categories grow. Therefore, Parallel Sets are most suited for
+categorical attributes with only a few categories.
+Spatial data are often visualized on maps. Bubble set [15] is an
+example that visualizes contours (implicit surface) for every category
+(set) that encloses all its elements and excludes all other elements
+if possible. Thus multiple category combinations can be visualized
+directly on a map showing how the elements of each category are
+spatially distributed. However, such an approach is not as suitable
+as Parallel Sets in revealing frequency information and relationships
+among two categorical attributes. A region based set visualization
+approach [9, 10] may create a cluttered visualization only for a few
+categories for irregular and meandering regions. MetroSets [26]
+visualizes set systems using the metro map metaphor.
+
+3
+
+D ESIGN OF S ET-S TAT-M AP
+
+The S ET-S TAT-M AP visualization is partitioned into three views:
+(left) Parallel Sets, (middle) statistics columns and (right) map view.
+We first describe the details of each view and then the coordination
+among these views.
+
+2.3 Table Based Techniques
+A spreadsheet provides a tabular visualization for multi-attribute
+dataset, where the rows correspond to the data records, columns
+correspond to the attributes, and each table entry is either a value or
+a category of its column attribute. If the precise numerical values are
+not important, then replacing the numerical values using horizontal
+
+3.1
+
+Parallel Sets View
+
+The visualization constructs a Parallel Sets view with vertical axes.
+The first, second and the last axes (when ordered from left to right)
+
+153
+
+

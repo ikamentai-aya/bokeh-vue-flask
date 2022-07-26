@@ -1,0 +1,134 @@
+(a) Search for news
+articles about the
+2016 election.
+
+(c) This event had the most articles
+published on November 9, 2016.
+
+(d) Adjust distance metric weights to
+update MDS layout to emphasize
+article publication times.
+
+(e) Hovering on a Reuters article shows a provocative title.
+Clicking the article loads the full text in the Article Panel.
+
+Donald Trump’s presidential victory threatens to intensify
+sexism and misogyny in American public life. Polling indicates
+that most Americans believed the women who came forward to
+accuse Trump of sexual assault. Election exit polls suggest that
+allegations over his treatment of women have made a majority
+of voters feel uncomfortable. Americans elected him president
+anyway. That sends a message that bragging about groping
+women—as Trump did in the 2005 Access Hollywood recording
+
+(b) The ordination view
+shows retrieved articles
+organized by similarity.
+
+Shortly after 3 p.m. on November 8, Donald Trump walked
+into the war room on the 14th floor of Trump Tower and
+received rousing cheers from his staff. While virtually the
+entire media Establishment was predicting Hillary Clinton was
+on track to win the election, Trump’s team remained “nervous
+
+(i) Hovering on the article in the
+Emotions Panel shows a
+breakdown of its emotions.
+
+but optimistic,” in the words of one adviser, that their man
+
+(h) Clicking the cluster creates a
+subselection for detailed analysis.
+
+(g) Aggregate emotions by sites
+
+(f) Difference in entities
+
+Joy
+
+Fear
+
+Figure 3: The interactions taken during the Use Case Scenario described in Section 5.
+
+5
+
+are columns ordered by index. Cell color indicates the frequency
+that top keywords appear in each cluster, supporting analysis of
+high-level coverage trends across the clusters.
+
+U SE C ASE S CENARIO
+
+To illustrate how News Kaleidoscope can be used to analyze coverage diversity, we present a use case scenario with Gary, a journalist
+who is reviewing reporting on the 2016 U.S. presidential election.
+This event, which took place on November 8, 2016 between Democrat Hillary Clinton and Republican Donald Trump, had reporting
+both leading up to the day as well as post hoc analysis and reporting
+on the outcome. Figure 3 shows his workflow.
+(a) Gary first searches for articles from two media organizations
+(Breitbart and The Atlantic) using the keywords trump and hillary
+from November 6–13, 2016. (b) The retrieved articles populate in
+the ordination panel. (c) By reviewing the temporal distribution of
+articles, Gary notices most are published on November 9 (the day
+after the election). (d) Gary increases the weight of the temporal
+distance metric, which updates the MDS layout to place articles
+published on the same day in the same cluster. (e) Using the tooltip
+to skim articles in the November 9 cluster, Gary notices that green
+circles (Atlantic articles) emphasize the trump keyword, however
+they seem to be downplaying his electoral win (example articles
+include Trump’s Victory Sends a Disturbing Message About Sexual
+Assault and Empathizing with Trump Voters Right Now). In contrast,
+Breitbart articles (in purple) focus on Hillary Clinton’s loss (e.g.,
+Justice has Prevailed with Hillary loss and Behind-the-Scenes of
+Team Trump’s Triumph, Hillary’s Concession). (f) This is further
+validated by reviewing the Site Overview Panel; the People entity for
+The Atlantic focuses on Trump, while Breitbart focuses on Clinton.
+This suggests that the two sites are exhibiting coverage diversity in
+how they are covering this event.
+Gary now wants to understand how these two sites are differing
+in their coverage. (g) He uses the Site Overview Panel to review the
+aggregate emotions expressed by these two sites. Three of the top
+four emotions (surprise, trust, anticipation) are shared between the
+sites, however The Atlantic includes fear and Brietbart includes joy
+as an emotion. (h) To analyze the emotions in depth, Gary selects
+the November 9 cluster as an article subselection into the Emotions
+Panel. He notices an interesting grouping of articles across this panel:
+the first and second clusters consist primarily of Atlantic articles,
+and one of the dominant emotions in these clusters is fear (this is
+supported by the highlighting of keywords in the Article Panel such
+as assault, war, military, and revolution). The third cluster, which
+
+(b8) Finally, hovering over an article displays its tooltip. To
+select a subset of articles from the overview (DR3), there are two
+available interactions. Drawing a lasso makes a freeform selection,
+while clicking on a cluster selects all of its articles. When an article
+subselection is made, the NER and emotion panels are populated for
+detailed analysis.
+(C) NER Panel. The NER panel visualizes the article subselection with (c1) an adjacency matrix and (c2) word cloud. The
+adjacency matrix shows pairwise article similarities between articles
+based on the entity distance metric, allowing for direct comparison
+of two articles. (c3) The user can choose which named entity types
+are used to compute similarity: persons, locations, organizations,
+or all (c4). Entity distance is used for this visualization (instead of
+keywords) as it bins extracted article text into explicit categories.
+Below, a word cloud shows which entities are most used in the article
+subselection. Words are ordered by frequency and colored by entity
+type. Hovering on a cell in the adjacency matrix highlights shared
+entities in the word cloud.
+(D) Emotions Panel. The emotions panel visualizes the emotional styles of the article subselection. Articles are clustered via
+k-means clustering using the emotional style vectors. (d1) Articles
+within each cluster are temporally ordered according to their publication day. (d2) Using the panel’s control widgets, cluster settings can
+be updated and article circles can be toggled to display as radial bar
+charts (d3). This view shows each article’s emotional style vector
+as a set of eight radial bars around its circle. (d4) Hovering on an
+article shows this vector using a (standard) bar chart. (d5) At the
+left of each cluster, we show that cluster’s top-4 dominant emotions
+(as well as the top contributing words to each emotion) to provide a
+glimpse of the cluster’s overall characterization.
+(E) Article Panel. The article panel allows inspection of individual articles (DR5) by showing the raw article text and metadata
+(author, news site, publication date). Articles are loaded in this panel
+by clicking on an article circle (ordination and emotion panels) or
+adjacency matrix title (NER panel). To support analysis, the user
+can highlight the extracted keywords and entities in the article’s text.
+
+135
+
+

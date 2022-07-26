@@ -1,0 +1,206 @@
+Table 2: ANOVA tests and post hoc comparisons for the three conditions under the different types of misinformation. The post hoc comparisons
+are conducted only when we found significance in the ANOVA tests.
+Story Type
+
+Misinfo. Type
+
+ANOVA-ptext
+
+ANOVA-pvis
+
+Comparison
+
+∆text
+
+post hoc-ptext
+
+∆vis
+
+post hoc-pvis
+
+COVID-19
+
+Contrad. Slant
+
+0.006**
+
+0.310
+
+Static - Annot.
+Static - Linking
+Annot. - Linking
+
+0.646
+0.405
+-0.241
+
+0.004**
+0.111
+0.457
+
+-
+
+-
+
+Carbon
+
+Inverted Axis
+
+0.023*
+
+0.059*
+
+Static - Annot.
+Static - Linking
+Annot. - Linking
+
+0.435
+0.419
+-0.125
+
+0.041*
+0.051*
+0.721
+
+0.503
+0.403
+-0.100
+
+0.065*
+0.167
+0.894
+
+Obesity
+
+Truncated Axis
+
+0.341
+
+0.586
+
+-
+
+-
+
+-
+
+-
+
+-
+
+Table 3: Means and standard deviations of the credibility scores
+
+Table 4: Reasons for being unaware of the misinformation.
+
+Condition
+
+Text Credibility
+
+Vis Credibility
+
+Reason
+
+Static
+Annotation
+Linking
+
+M = 5.14, SD = 1.06
+M = 4.77, SD = 1.16
+M = 4.89, SD = 1.01
+
+M = 5.08, SD = 1.15
+M = 4.78, SD = 1.26
+M = 4.88, SD = 1.10
+
+Inattention to elements related to misinformation
+Excessive trust in text
+Wrong interpretation of visualizations
+Lacking Prior Knowledge
+Overlooking violation of visualization conventions
+Misunderstanding the reference relationship
+Lacking intention to find misinformation
+
+in the COVID-19 story, some participants paid less attention to
+information near the end of the story: “It was not easy [to find the
+misinformation] because it was at the end of the paragraph. My
+mind was not fully focused on the information knowing that it was
+like a closing sentence”.
+Participants also identified text as an important factor that affects
+their understanding of the data story (“Excessive trust in text” in
+Table. 4 ). This finding is consistent with the claim of Kong et
+al. [27] that text has a strong power in manipulating the receiving
+information of data stories. Even though some participants sensed
+something might go wrong with the chart, they did not consider it as
+misinformation: “I saw that the text and chart didn’t match, but I
+assumed the text was correct and the chart had been printed wrong”.
+Misinterpretation of the visualizations is another reason. For
+example, some participants failed to decode one dimension of the
+data points: “The problem here is seeing where the line points match
+the date along the x-axis. It is not easy to see how the dates align
+with the line drawn”. As stated in Section 4.2, the visualizations
+used in the study are closed to what has been used on public online
+news. Hence, this reason shows the importance of media improving
+the comprehensibility of visualizations in their publishing stories.
+Participants also reported Other reasons, include lacking prior
+knowledge (e.g, “I think I was fooled by [my prior impression of]
+Canada and somehow thinking of it as being full of empty space and
+clean air compared to the others”), over-reliance on conventions of
+visualization (e.g, “I don’t know how one would be able to know
+that the y-axis is inverted without being told so”), misunderstanding
+the reference relationship (e.g, “I felt like the text was focused on
+the early January reaction to the December spike”), and lack of
+intention to find the misinformation (e.g, “This is not easy to spot
+and I was not really looking for misinformation”). We discuss the
+design implications from these reasons in Section 6.
+
+Percentage
+45.88%
+15.74%
+11.64%
+10.24%
+8.20%
+5.48%
+2.73%
+
+misalignment [26, 27], have been studied in prior literature, and
+their threats to general audiences have been verified. However, other
+forms of misinformation within our analysis have received relatively
+less attention this far. For example, manipulating the layout in the Arranging step or organizing the story pieces’ sequence in the Scripting
+step might result in readers’ wrong decoding of visual information.
+While there exist studies aiming at understanding the influence of
+layout or sequence on narrative visualization [2, 23], few of them
+concern misinformation. Hence, more works are needed to deepen
+our understanding of misinformation in data storytelling.
+The results of our crowdsourcing study suggest that the two
+common-used design methods, Annotation and Linking, can raise
+participants’ awareness of misinformation. We also found these two
+design methods can affect the perceived credibility of text and visualizations. However, the effects observed in our study look limited
+as most participants cannot find misinformation in the given data stories. But, we believe the two methods, Annotation and Linking, have
+the potential to collaborate with other methods to form a defensive
+design to protect lay people from misinformation. Annotation and
+Linking serve for bridging the perceptual gap between the text and
+visualization, which induce readers to pay attention to data-related
+narratives. By adopting other attention-guiding methods to nudge
+readers reading data stories comprehensively and skeptically (e.g.,
+explicit warning [32]), we can have solutions to “Inattention to elements related misinformation”, the most important cause identified
+in our study for being unaware of misinformation.
+Worth mentioning, the two defensive design methods we chose
+as conditions in the experiment (Annotation and Linking) can be
+automatically applied to many data stories using existing technologies [28, 30]. With that said, we envision a possible future to defend
+misinformation: story or news release platforms, such as New York
+Times, can automatically transform the uploaded data stories from
+authors into a form that contains some defensive design methods
+and then release the stories to the public. In that sense, the platform can establish a protective barrier in content dissemination from
+authors to readers. Even if advanced algorithms cannot detect misinformation, readers will still have the opportunity to be aware of
+misinformation.
+
+6 D ISCUSSION
+6.1 Combat Misinformation from Narrative Visualization
+In this paper, we first explore the possible ways that narrative visualization can bring misinformation in its production and consumption
+process. As suggested by Correll and Heer [13], “we should enumerate the ways that visualizations can deceive or mislead.”. Our
+work is a first step towards analyzing the space of misinformation in
+illustrated data stories. Some forms of misinformation we have summarized, e.g., deceptive visualization [31, 45] and text-visualization
+
+148
+
+

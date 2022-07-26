@@ -1,0 +1,101 @@
+and proposed design opportunities to combat misinformation.
+2
+2.1
+
+R ELATED W ORK
+Combating Misinformation
+
+Misinformation is commonly defined as any false or inaccurate
+information [56]. Interpretation of “information” in this definition,
+however, may change in different scenarios, as it could mean facts
+provided or facts learned [53]. Kong et al. remove this ambiguity
+by thinking from the readers’ perspective and define misinformation
+as “information that leads to misperceptions about the facts” [27].
+In this paper, we follow the definition by Kong et al. and consider
+incorrect or misleading information readers receive and consume.
+Despite the different research angles, there is a general consensus
+on the negative impact of misinformation [56]. Therefore, methods
+to combat misinformation in the digital world are gaining increasing
+attention from the research community and the general public.
+The most straightforward anti-misinformation approach is designing algorithms to automatically detect false or inaccurate facts
+disseminated online. Researcher have developed algorithms that utilize content data (e.g., text, image), context data (e.g., published time
+or location), and propagation data (e.g., retweet and likes on social
+media) to detect misinformation [56]. Still, there are concerns about
+the generality of current detection methods [20], and few existing
+algorithms take visualizations as input into their analysis.
+In the visualization area, researchers have studied misinformation
+in the forms of cognitive bias, visualization mirage, deceptive visualizations, etc. [37, 45, 54]. Several works have experimented with
+means to combat such misinformation in ordinary visualizations.
+For example, McNutt et al. [37] propose a metamorphic testing
+method to surface visualization mirage in visual analytics process.
+Different from previous research, our work focuses on misinformation occurring in the production-consumption process of data stories
+and explore design alternatives to combat misinformation that come
+from information misalignment.
+
+Figure 2: ((A) Interactive linking [48]: (A1) Highlighted word,
+(A2)Visualization element corresponding to (A1). When reader
+hover (A1), (A2) will be highlighted by some visual cues. (B)
+Explanatory annotation [42]: (B1) Visualization elements of interest,
+(B2) Text that explain (B1).
+
+This idea is inspired by the fact that different framing of the narrative
+visualization can result in different interpretations towards the same
+data story [22]. Previous studies show that relying on one-sided
+information to understand data stories may partially result in the
+unawareness of deceptive visualizations and text-visualization misalignment [27, 31]. Motivated by this observation, in our study, we
+considered candidate design methods that can enhance the integration of text and visualization, thus balancing readers’ interaction
+with textual and visual information. To this end, We choose two
+commonly used and easy-to-promote design methods: interactive
+linking and explanatory annotation [29, 30, 57].
+Interactive linking (denoted as Linking in the rest of the paper)
+highlights the corresponding explanatory visual elements when selecting specific sentences or words in the text (e.g., Fig. 2(A)). Explanatory annotation (denoted as Annotation) positions interpretative notes extracted from the text close to the corresponding visual
+elements [5] (e.g., Fig. 2(B)). Both candidates bridge text and visualization, two critical components to data stories, either statically
+(Annotation) or dynamically (Linking) and guide readers’ attention
+to regions of visualizations that are central to the storytelling.
+To evaluate the effectiveness of enhanced text-visualization integration, we designed and conducted a crowdsourcing study on
+Amazon Mechanical Turk with 222 participants to measure whether
+Linking and Annotation can affect people’s awareness of misinformation and perceived credibility of text and visualization. We carefully
+selected three data stories on popular topics that are flooded with
+misinformation as study materials. For each story, we edited the
+original material to inject one piece of misinformation using one of
+the three methods identified in previous research: truncated axis (a
+case of deceptive visualization), inverted axis (another instance of deceptive visualization), and text-visualization contradiction (a kind of
+text-visualization misalignment) [27, 45]. Our experimental results
+showed that Linking and Annotation do enhance readers’ awareness
+of misinformation and significantly lower the perceived credibility
+of the text or visualizations in the corresponding stories. However,
+we also noticed most participants are still unaware of misinformation. For participants who did not find misinformation in the given
+stories, we analyzed their subjective feedback on possible reasons
+
+2.2
+
+Narrative Visualization
+
+Visualizations have been widely used to tell stories about data. Segal and Heer [51] introduced the term “narrative visualization” to
+cover such type of visualizations. Despite the varieties in genres,
+narrative visualizations generally combines (textual) narratives with
+interactive graphics [51].
+Prior research around narrative visualization can be divided into
+three categories. The first type of research focuses on exploring the
+design space of a particular genre or aspect of narrative visualization. For example, Bach et. al [2] conclude design patterns for
+data comics. The second type of research seeks to develop algorithms and systems to facilitate the authoring process of narrative
+visualizations. Examples include Calliope [52] which automatically
+generates data stories from spreadsheets. Kong et al. [28] also proposed a crowdsourcing-based method to create interactive articles.
+The third type of research investigates factors that influence readers’
+experience to motivate better design of narrative visualizations. For
+instance, McKenna et. al [36] look into how the reading flow of data
+stories affects readers’ engagement. Our work is close to the last
+type of research and aims to investigate factors that might influence
+readers’ awareness of misinformation in data stories.
+We are particularly interested in factors concerning narrative visualization design. Given the considerably large design space, Hullman
+and Diakopoulos [22] have proposed a framework to analyze what
+can affect users’ interpretation of narrative visualization, which consists of four editorial layers, i.e. data, visual representation, textual
+annotation and interactivity. Among them, design techniques applied
+on the annotation and the interactivity layers can promote reader’s
+digestion of the story content and assist in awareness building by
+enhancing the connection between text and visualizations within a
+data story [47]. For example, Kwon et al. [29] propose a technique
+
+142
+
+

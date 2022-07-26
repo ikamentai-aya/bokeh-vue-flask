@@ -1,0 +1,107 @@
+news articles on people than other two” (p3).
+Clustering is effective for showing coverage diversity. Several
+participants described the clustering—both in the ordination and
+emotions panels—as an effective and “intuitive” (p7) way to show
+coverage diversity. “When I look at the clusters [in the MDS plot],
+there is a shift in polarity from right to left. Here towards the right
+there are more articles on Hillary and here’s there’s more Trump”
+(p11). In the MDS plot, clustering “helped to select which articles
+to read” (p8) and make subselections on.
+In the emotions panel, clustering “allowed me to get a good idea
+of emotional values from the news articles” (p6). Several participants
+mentioned the emotional style vectors provided helpful insight into
+how and why articles were clustered, thus making the emotions
+panel “better than clustering based on keywords and entities as it
+was more intuitive than keyword clustering” (p6).
+At times however, there was confusion when computed clusters did not line up with participant expectations or mental models.
+For example, in the ordination panel participants would sometimes
+wonder why a particular story was included in a particular cluster,
+and in the emotions panel participants sometimes were unsure how
+emotions contributed to a cluster. As an example, when p2 was
+reviewing articles about the Pulse Nightclub shooting: “It’s all fear
+and anger and surprisingly there is no sadness which one would
+normally expect. I didn’t expect that.”
+Participants recognized diversity, but it was hard to translate
+these into broader conclusions about media bias. Along these
+lines, while participants were able to recognize variation between
+articles and sites, they were reluctant to use these to draw explicit
+conclusions about media bias. As most users were unfamiliar about
+the perceived political leanings of media sites, many were unwilling
+to make strong statements about specific sites or bias based on
+keyword, entity, and emotional variations in the stories. Statements
+tended to focus on the specific articles that were being analyzed:
+“Not sure if CNN is anti- or pro-[Trump], but its articles show that
+they are doubting Trump’s win” (p7).
+Interestingly, some participants contextualized news sites using
+a prior they were familiar with: clickbait writing. “Atlantic has
+clickbait headlines” (p2). “CNN kind of publishes reactionary kind of
+headlines but Reuters has a more balanced view” (p4). “This site has
+clickbaity articles, the headlines would make you think something
+but the emotions in the tooltip suggest something else” (p2). Several
+participants also suggested the system explicitly anchor or label the
+bias and framing of articles or news sites to help contextualize how
+they should be interpreted. “Naming the clusters would have made
+user investigation faster” (p6). “I see how on an event is covered,
+but I couldn’t form an opinion [about specific news sites] . . . so if
+more annotations were present it would have been better” (p5).
+
+Figure 5: This chart shows overall ratings from the post-study
+questionnaire about various system aspects by the novice users in
+Study #2. Median ratings are indicated in grey.
+
+6.4.2
+
+Supporting Insights for Novice Users
+
+To understand the insights of news novices, we reviewed both the
+think-aloud comments made during the exploration stage and the
+freeform comments from the review stage. Specifically, we contextualize these results to Study #2 to highlight the different experiences
+that News Kaleidoscope provides for non-domain experts.
+For news novices, the interface was both easy to use and too
+complex. Despite not being the intended user base, we received
+several comments about the News Kaleidoscope being “useful” (p6),
+and “easy to use” (p7). However, some users paradoxically felt
+overwhelmed by the system’s available features and interactions. “I
+didn’t use all the features as there were so many” (p11). Multiple
+users suggested streamlining the user experience (p7, p6, p1), or
+thought that follow-up sessions would lead to more efficient analysis: “Probably [the] user needs more time to make full use of the
+system” (p5). This mixed feedback is likely due to a lack of domain
+knowledge by news novices, which hampered some of the users’
+experiences while not being a problem for others.
+Aspects of the user experience echoed news experts. Similar
+to Study #1, several participants remarked how News Kaleidoscope
+allows them to review articles in a scalable fashion:“I can generally
+just read one article from one site on my news app or site, however
+this system is helps me read a number of articles on an event by
+different sites at the same time. This in addition to the other features
+such as keywords, time, entities and emotions is really helpful” (p8).
+Entities, both via tooltips and in the NER panel, were especially
+helpful for getting a quick overview of a story: “Entities tell me
+who and what all are included without reading the entire article”
+(p6). Some users leveraged the entity-based pairwise similarity in
+the NER panel’s adjacency matrix, as this was the only visualization
+that directly compared two articles: “There is more similarity in
+
+6.5
+
+Study #3
+
+Studies #1 and #2 validated several aspects of News Kaleidoscope,
+particularly its ability to support coverage diversity for news experts
+(as well as its ability to introduce the topic to news novices). Despite
+the largely positive feedback, some features were commented upon
+as either missing or confusing by multiple study participants. Specifically, we identified three targeted system improvements based on
+participant feedback: (1) provide additional transparency or explanation into the number of clusters to show, both in the ordination
+and emotions panels, (2) provide views that support summary and
+comparative analysis of news events and sites, and (3) provide additional explanation of how emotions are computed. The systems
+features in Figure 2(b5, b6, b7, d5) were thus added to the system.
+To validate these design improvements, we followed up with four
+participants (u1–u4) from Studies #1 and #2 (three from Study #1,
+one from Study #2), who could compare the system’s updates against
+the original version. For each participant, we conducted a pair
+analytics session over Zoom, demoing the system’s new functionality
+and soliciting freeform feedback. In general, the new components
+
+138
+
+

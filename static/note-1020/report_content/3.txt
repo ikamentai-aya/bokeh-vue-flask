@@ -1,0 +1,135 @@
+5.1
+
+In Distribution View (Figure 1A), users can identify the characteristics of the overall NMT data and obtain clues about noisy parallel
+corpora (DR1). We provide two visual components. 1) Parallel Coordinate Plot (PCP) to show relationships as a path between each
+metric score extracted in the preprocessing step; 2) Scatterplot with
+two user-selected metrics for x and y axes. However, as the size
+of parallel corpora are usually huge, visual clutter can often occur
+in PCP. To address this problem, we combined histograms which
+represent the distribution of each metrics on each axis in a different
+color, adopting the Parallel Histogram Plot encoding scheme [3].
+In addition, the scatterplot enables users to check the correlation
+between two metrics in more detail. Users can select an interesting
+range of values of a metric to filter out noise candidates by brushing
+on the corresponding axis. As shown in Figure 3, the selected candidates are shown in Ranking View to help users check the details
+of metrics (DR1). Moreover, users can change the order of axes by
+dragging an axis over other axes. The order of axes is linked to all
+other views such as Ranking View and Ruleset View.
+
+Brushing
+Brushing
+A Update Ranking View
+B
+
+Show hovered
+item as path
+
+C Change Weight
+Mouse-Hover
+
+Figure 3: Linking between Distribution View and Ranking View. (A)
+Users can brush multiple axes on PCP to see details in Ranking View.
+(B) A mouse-hovered item will be displayed in PCP. (C) When metric
+weight is changed, the ranking will be updated.
+
+4
+
+DATA P REPROCESSING FOR METRICS
+
+5.2
+
+We prepared multiple metrics that reflect the composite quality of
+parallel corpora to provide a scalable overview (DR1). Interactively
+adjusting the weights of the metrics and checking the ranked list of
+sentence pairs, users can effectively inspect the corpora from diverse
+perspectives. The preprocessing steps to extract metrics are depicted
+as follows.
+We first extracted length ratio (target/source length) and token
+length ratio (tokenized target/source length) from parallel corpora
+that represent their general properties. However, these general properties cannot represent semantic similarity and may not be useful
+when the language family is different (e.g., Korean and English).
+To complement the limitation, we extract cosine similarity by using
+Universal Sentence Encoder [5] as the pre-trained encoder for encoding sentences into embedding vectors regardless of a language
+type, hence the metric inherently supports universal languages.
+Inspired by the back-translation [19], a technique providing monolingual training data with a synthetic source sentence translated from
+the target sentence into the source language, we translated source
+and target language into target and source language, respectively,
+by using Google Translation API. This enabled us to apply two
+NMT evaluation metrics: 1) BLEU [16], presenting correspondence
+between a machine’s output and that of a human; 2) METEOR [2],
+based on the harmonic means of n-gram [4] precision and recall.
+Note that the back-translation result is provided in Text Compare
+View (Section 5.3), so that the users with less expertise in either
+source or target language can also use our system (DR3).
+In summary, the metrics provided by our system are as follows
+: Cosine Similarity (between source & target sentences, between
+source & back-translated target sentences, between target & backtranslated source sentences), Length Ratio, Token Length Ratio,
+BLEU, and METEOR. The overall pipeline of our preprocessing is
+shown in Figure 2.
+5
+
+Distribution View
+
+Ranking View
+
+The Ranking View (Figure 1B) provides detailed information such
+as metrics’ score and the rankings of noise candidates which are
+selected in Distribution View (DR2). Since the size of the parallel
+corpora is huge, the size of user-selected noise candidates from
+Distribution View may still be too big to explore one by one. Thus,
+we prioritize noise candidates by the weighted sum of multi-metric
+scores to enhance users’ cognition of noise detection [10]. Determining rankings based on the weighted sum of multi-metric scores can
+be considered as a multi-criteria decision making (MCDM) problem.
+Inspired by Lineup [7], we provide a table that shows detailed information with a slider bar for adjusting the weight for each metric.
+Once the weights are set, Ranking View calculates the weighted
+sum of each candidate based on individual metric scores, then sorts
+the candidates by their weighted sum (DR4). Each row of Ranking
+View shows (1) A natural language form of the paired sentence, (2)
+weighted sum, (3) and individual metric scores. The weighted sum
+is represented as a stacked bar, and metric scores are depicted with
+bars in different colors. The length of the bar represents the metric
+score and the saturation of the bar shows the ranking of the sentence
+pair based on the corresponding metric. When users hover the mouse
+in a row in the table, Text Compare View (Figure 1C) automatically
+moves to the part corresponding to the hovered item for details and
+PCP highlights the path related to the item. By examining the candidates, users can determine whether each candidate is an actual noise
+or not; they can save such selected candidates as a ruleset by clicking
+“Save Ruleset” button. Note that when users create a ruleset, they
+should designate the color and the name of the ruleset.
+5.3
+
+Text Compare View
+
+Although diverse evaluation metrics are provided in our system, the
+metrics may not fully reflect the actual quality of parallel corpora.
+It is thus necessary for users to examine the raw text of the parallel
+corpora. Since our design requirements considers users who are not
+literate in one of the source or target languages (DR3), Text Compare
+View (Figure 1C) offers three language selection options: source,
+target, and source ↔ target. If users select either source or
+target, the view depicts source sentence and back-translated target
+sentence, or target sentence and back-translated source sentence,
+respectively. When users select source ↔ target option, the view
+shows source and target sentence. If users select source or target
+option, the system represents the similarity between two sentences by
+depicting n-gram matching, so that users can more readily identify
+the commonalities and differences between two sentences. Common unigram, bigram, 3-gram and 4-gram within two sentences are
+highlighted with different text background colors.
+
+V ISUALIZATION D ESIGN
+
+We developed VANT, an interactive visualization system to fulfill
+the formulated design requirements. As shown in Figure 1, the
+system consists of four views: Distribution View, Ranking View,
+Text Compare View, and Ruleset View. The general sequence of
+using the system is as follows. First, select noise candidates within
+parallel corpora based on metric scores using Distribution View.
+Second, check the details of the selected candidates using Ranking
+View and Text Compare View. Third, select the actual noisy sentence
+pairs by checking them in Ranking View and save them as a ruleset.
+Finally, analyze the pattern of the actual noisy sentence pairs in
+Ruleset View.
+
+183
+
+

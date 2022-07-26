@@ -1,0 +1,125 @@
+nalism researchers. These users are interested in analyzing news
+reporting (and coverage diversity), but they are not visualization or
+NLP experts. To identify “polarities” in coverage diversity, we adopt
+a workflow around selecting article subsets (subselections), based on
+the premise that while articles about an event of interest will largely
+share top-level keywords and factoids, subselections will vary in
+second-level keywords, entities, and emotional stylings that enable
+a more nuanced understanding of coverage diversity.
+To understand how News Kaleidoscope supports the analysis
+of coverage diversity, we conduct an extensive set of evaluations.
+We first evaluate News Kaleidoscope with the journalism-savvy
+target users (Study #1), whom we call news experts, to understand
+the specific types of insights promoted by the system. Then, to
+understand if and how News Kaleidoscope generalizes to a broader
+user audience, we conduct a follow-up study with news novices
+(Study #2). The participants in this study have little familiarity with
+U.S. news sites and therefore few preconceived assumptions about
+how coverage will differ when reporting on news events. Based on
+feedback from these studies, we implement a targeted set of design
+improvements to News Kaleidoscope and conduct a validation study
+(Study #3) to verify their efficacy.
+Our results indicate that News Kaleidoscope effectively supports analysis of coverage diversity both for news experts and news
+novices, though interestingly it provides different benefits to each
+user group (e.g., for news experts, it supports validating hypotheses
+and assumptions about news sites). Based on our experiences in
+creating and evaluating News Kaleidoscope, we discuss generalizable takeaways for visually analyzing coverage diversity in a news
+landscape that is increasingly online and diversified. In summary,
+the contributions paper include: (1) we identify requirements for visually analyzing coverage diversity, which constitutes a current and
+real-world problem in journalism and media research, (2) we design
+and implement a novel visualization system, News Kaleidoscope,
+for analyzing news articles about an event of interest in the context
+of coverage diversity, (3) based on a series of robust evaluations with
+both news experts and novices, we learn about design guidelines and
+implications for analyzing coverage diversity using visualization
+and NLP.
+
+news visualization tool, its intended goal differs from these systems.
+News-focused interfaces build upon the broader community of
+visualization of text data. Such visualizations normally leverage
+text mining and/or NLP techniques, including keyword extraction,
+entity recognition, event and topic modeling, sentiment analysis, and
+document similarity/clustering [8, 28, 31], to transform unstructured
+text corpora into derived text (meta)data that is suitable for visual
+analysis. Several general-purpose visualization systems have been
+designed for high-level summarization and browsing of events/topics
+via aggregate visualizations [12, 18, 33]. Alternatively, a collection
+of documents can be plotted as discrete data points using techniques such as matrices [5], clustering [45], parallel coordinates [17],
+force-directed layouts [29], and dimensionality reduction or ordination [9, 26]. Several of these techniques require computing the
+pairwise similarities between documents—see Cao and Cui for an
+overview [8]. In News Kaleidoscope we employ a multi-weight
+aggregate distance metric that can be interactively adjusted.
+Contextualizing News Kaleidoscope to Previous Work. In
+contrast to prior-mentioned news and text visualization systems,
+which support tasks such as the broad summarization of events over
+time [33] or support comparing the keywords used by two media
+sites [16], News Kaleidoscope’s design is tailored towards a specific demographic and goal: people who are interested in analyzing
+the coverage diversity of news reporting, but who are likely not
+visualization or NLP experts. In contrast to general-purpose visualization interfaces for text and document corpus analysis, news
+articles have special semantics—for example, articles reporting on a
+news event likely share similar top-level keywords and emotions, but
+it may be necessary to investigate second-level nuances in the data
+to understand if and how coverage diversity is occurring. Further,
+we carefully design News Kaleidoscope to balance its analytical
+capabilities with a user experience and visualization designs that
+are accessible to the target user base, by following a rigorous design study methodology [43] that results in generalizable takeways
+demonstrating how the visual analysis of coverage diversity differs
+from general text visualization, particularly when accounting for the
+user expertise.
+3
+
+2
+
+R ELATED W ORK
+
+D ESIGN R EQUIREMENTS A NALYSIS
+
+To motivate a visual analytics design for investigating coverage diversity, we interviewed a trio of news experts: journalism professors
+who research or teach on news reporting and media (two experts are
+currently assistant professors, and the third is a full professor).
+A significant problem in the journalism community (stated by
+each participant) is that there are a lack of computational tools or
+visualization software specifically designed for analyzing of reporting various styles or themes (i.e., coverage diversity) in news-based
+reporting. While the participants knew computational processes
+existed for analyzing text data (e.g., NLP algorithms), they had little
+familiarity with the technical aspects (leading to high uncertainty
+and limited trust). Based on these interviews, we derived a set of five
+design requirements (DRs) to support visual analysis specifically in
+the context of analyzing news reporting for coverage diversity. For
+each DR, we provide a brief justification about how it supports the
+intended domain (i.e., visualization non-experts who want to analyze
+news articles). Section 4 describes the software stack in detail.
+DR1: Retrieve articles about an event of interest. The common “first step” for our participants in their analytic workflows was
+to search for news articles about a topic of interest via keyword-based
+queries in search engines, then skimming or reading through the text
+of retrieved articles. This workflow lies in contrast to some previous
+systems for document visualization, which begin by showing an
+aggregate view of the entire collection (e.g., [18, 33]). Since such
+a summarization perspective is extraneous for the current domain
+(i.e., the participants already know what topic they want to search
+for, and what its high-level keywords are), we omit a summary view
+
+Bias and Framing in News Reporting. Biased reporting can have
+substantial societal impacts. For example, a 2007 study by DellaVigna and Kaplan [14] found evidence that media bias had a significant
+effect on voting in the 1996 and 2000 presidential elections. More
+recently, a 2015 study [22] showed that exposure to biased news can
+lead to intolerance of dissent and group polarization.
+Today, watchdog organizations such as AllSides [2] and the Center for Media and Public Affairs [3] assess media bias and framing,
+primarily via qualitative assessments. In contrast, academic research
+has employed data-driven approaches to quantify bias in news reporting. A seminal 2005 paper by Groseclose and Milyo [23] assigned
+bias scores to news organizations by counting think-tank citations
+in articles, scoring the majority of studied outlets as left-leaning. A
+recent survey paper [24] reviews several automated approaches for
+identifying media bias in news articles, including ones that blend
+NLP with visualization, and recent work has investigated the use
+of machine learning for identifying and classifying bias (e.g., by
+analyzing the propaganda techniques used by news agencies [13]).
+Visualizing News Reporting and Text Data. News visualization tools support the analysis of reporting. For example, LingoScope [16] and Compare Clouds [15] enable the comparative analysis by visualizing keywords distributions between media groups
+or news sites. TimeMines [46] generates event timelines based on
+semantic features such as keywords and entities present in the text
+of articles (similarly, Chieu and Lee [10] support time-based event
+extraction via keyword queries). While News Kaleidoscope is a
+
+132
+
+

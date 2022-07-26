@@ -1,0 +1,123 @@
+B
+
+ENG
+
+FRA
+
+C
+
+A
+
+Figure 5: (A) The selected noisy paired sentences from the Ranking
+View are saved as a ruleset with the information of color-mapped label
+name, cardinality, and metric weight as a heatmap. (B) The relationship of rulesets is expressed in edge bundling. In this case, four rulesets are saved and three rulesets (↑Cos↓BLEU, ↓Cos, ↓T Length R)
+have common items.
+
+Figure 4: (A) When users mouse-hover an item in Ranking view,
+Text Compare View automatically moves to the hovered item. (B)
+Users can select their preferred language for comparison. (C) The
+background color of texts means n-gram words matching between a
+paired sentence
+
+5.4
+
+noisy parallel corpora using our system for 20 minutes. Afterward,
+we asked participants to filter out noisy parallel corpora and refine
+the dataset with our system for 20 minutes. Lastly, we had a post-hoc
+interview for feedback.
+
+Ruleset View
+
+Once a set of noisy sentence pairs are selected as a ruleset by users
+in Ranking View, users can analyze the pattern of the ruleset in
+Ruleset View (Figure 1D) to find more noisy sentence pairs. When
+a ruleset is created, sentence pairs within the set are highlighted in
+Distribution View with designated color (DR1), and thus users can
+easily identify their distribution. Also, to allow users to understand
+the characteristics of the noise of each ruleset in detail (DR4), the
+features of rulesets are represented in three subviews: Ruleset Information View, Ruleset Status View, and Ruleset Relationship View.
+In Ruleset Information View, the metadata of each ruleset—name,
+color, cardinality, and weight of each metric—are represented (Figure 5A) as a row. The weight of each metric is provided in a heatmap,
+to enable intuitive comparison between rulesets. When users click
+on a row, Ranking View and Text Compare View depict the sentence
+pairs within the ruleset, and corresponding paths and points at PCP
+and scatterplot in Distribution View are highlighted; this enables
+users to easily track the history of each ruleset. In Ruleset Status
+View, the average of metric scores are displayed as a line graph
+to help users grasp the characteristics of the noise sentence pairs
+within a ruleset (DR4), Note that the lines are superimposed over
+a boxplot which represents the statistics of the metric score of the
+dataset. Finally, in Ruleset Relationship view, the commonalities
+between rulesets are explained (Figure 5B). In this view, each ruleset
+is represented as a circle, where the radius of the circle represents
+the size of ruleset. If two rulesets have common items, they are
+linked with a line, where the width of the line depicts the number
+of common items. After users examine rulesets in Ruleset View,
+they can generate a new dataset where the sentence pairs within the
+inspected rulesets are filtered out.
+6
+
+6.1
+
+Results
+
+Detecting noise candidates In the beginning, all participants mainly
+investigated the distribution of metric scores using Distribution View
+in selecting noise candidates (DR1). The participants then selected
+noise candidates within a specific metric score range (e.g., low
+BLEU and low METEOR) by brushing on PCP and examining
+the noise candidates’ details in Ranking View (DR2). The domain
+experts who have a relatively high understanding of the metrics tried
+to find various noise candidates through interactive exploration in
+Distribution View and Ranking View. For example, E1, E2, and
+E4 repeatedly brushed multiple metrics in PCP and adjusted the
+weights of the metrics in Ranking View. We observed that most
+experts increased the weights for BLEU and METEOR metrics and
+decreased the length ratio metric. In addition, some participants (E3,
+S2, S3) discovered that the low cosine similarity of the corpora does
+not guarantee their quality using Text Compare View.
+Inspecting actual noise from candidates After selecting a set
+of paired sentences as noise candidates, the participants inspected
+actual noise from the candidates in Text Compare view (DR3). Most
+of the participants said that highlighting sentence pairs based on
+n-gram matching was very helpful to quickly judge whether they
+were noisy or not. In particular, regarding English-French data, all
+participants responded that they could easily and quickly compare
+parallel corpora utilizing back-translated English sentences from
+French, even though they were not literate in French.
+Save rulesets and analyze their patterns Interviewees saved a
+subset of noise candidates as a ruleset. More than half of the participants (E1–E4, S1) mentioned the status of noisy parallel corpora
+sets revealed in the PCP and the scatter plot is beneficial in tracking
+the history of their previous selections. Besides that, E3 and E4 were
+interested in finding noise patterns through Ruleset View and Distribution View (DR4). E3 figured out which paired sentences were
+repeatedly selected from Ruleset Relationship View. E4 examined
+the scatter plot to find patterns while changing x and y axes.
+
+Q UALITATIVE U SER S TUDY
+
+To demonstrate the effectiveness and usefulness of VANT, we conducted a user study with eight participants in Samsung Research.
+The participants consist of four domain experts (E1–E4) working in
+Natural Language Processing team and four professional software
+engineers (S1–S4) in the Software Engineering team. All participants have more than six years of experience. They are also native
+in Korean, fluent in English, and have no French background.
+We used two real-world datasets for the evaluation: 1) English/French biomedical data from Scielo Corpus [15]; 2) Korean/English news data [17]. We prepared English/French dataset to
+observe how users use our system without linguistic background.
+Our study was conducted in person through the following steps.
+First, we briefly explained the purpose of our system and the overall
+design for 15 minutes. We then demonstrated how to detect and filter
+
+6.2
+
+Post-hoc Feedback
+
+At the end of each session, we asked the participants about the
+usefulness of our system and possible improvements. Overall, all
+participants said that the distribution of each metric score represented
+in Distribution View was helpful in understanding the data quality.
+They answered that multiple views and coordinated interactions were
+useful for exploring noisy parallel corpora. They also mentioned that
+adjusting weights and showing information of a ruleset helped them
+
+184
+
+

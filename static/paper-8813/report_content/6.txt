@@ -1,0 +1,105 @@
+Figure 5: The procedure of the study. Note that each participant went through stage 2 three times as they read three stories in total.
+
+pleted the tasks by accessing our study website that was posted
+on MTurk. The participants were provided with an online consent
+form after the study website is loaded. After they agreed on the
+terms, we asked questions regarding the demographic information,
+self-reported visualization literacy level, and the attitudes towards
+the three topics covered in the stories (as shown in step 1 in Fig. 5).
+Then, they proceeded to complete the tasks in the following phases:
+Story reading phase As shown in step 2 in Fig.5, the participants
+were required to read the three data stories and answer the followup questions after reading each story. The order of stories and the
+assignment of conditions were counter-balanced among participants.
+The participants could spend as much time on each story but no
+shorter than 30 seconds (mandatory minimum viewing time). Note
+that after reading each story, we did not ask participants to report
+detected misinformation because we didn’t want participants to look
+for misinformation on purpose in subsequent stories. Such questions
+were asked in the later phases.
+Story revisiting phase After participants had read all stories and
+answered corresponding questions, we presented the three stories
+again and asked them to report if they had found any misinformation
+(denoted as Story Revisit questions). If participants claim to have
+detected misinformation, we asked them to specify the sentence(s)
+that contain the identified misinformation (step 3 in Fig. 5). In the
+instructions of this phase, we emphasized no need to re-read the
+stories to complete these questions.
+Fact checking phase After revisiting all three stories, participants were introduced to the facts and the methods to manipulate
+them (denoted as Fact-Checking questions). They then were asked
+to reflect on whether such misinformation is easy to spot (step 4 in
+Fig. 5). If they do not find the misinformation during their previous
+reading, we invited them to write down the reasons.
+4.6
+
+worthiness, bias, and completeness. We toke average of the rates as
+the perceived credibility in the subsequent analysis. (4) knowledge
+consistency. The prior knowledge and belief can influence the reading experience of pariticipants [24, 27]. Thus, we asked participants
+the level of consistency between the content of the story and their
+prior knowledge in seven-points likert scale to analyze the influence
+of prior knowledge to the results.
+5 R ESULTS
+5.1 Awareness of Misinformation
+To investigate whether participants were aware of the misinformation in the given data stories, we coded participants’ responses to
+the questions in the story revisiting and fact-checking phases (see
+subsection 4.5) and labeled their level of awareness based on the
+following criteria:
+1. Participants who stated finding the misinformation in the story
+revisiting phase and also gave the right sentence that contains
+that misinformation were labelled as “fully aware”.
+2. Some participants did not imply in the story revisiting phase
+that they found misinformation but in the fact-checking phase
+reported to have noticed the misinformation. For example,
+“I did see that inconsistency between the text and the visualization, but did not compute that it was an error, which was
+wrong of me”. We labeled such participants as “somewhat
+aware”, if there exists evidence indicating that they hold reasonable suspicion. Such evidence includes but is not limited
+to doubting (certain part of) the chart in their replies to the
+story-summarization questions, giving low credibility ratings
+(≤ 4) in the perceived credibility questions, etc.
+3. For any cases other than 1 and 2, we label them as “unaware”.
+One author and one PhD student with psychology background
+coded the data. After coding the first 100 responses, they met
+to compare the labeling results and resolve any conflicts through
+discussion. Then they coded the rest data. An inter-rater reliability
+analysis using the Kappa statistic shows high reliability (κ = 0.84).
+Fig. 6 shows the distribution of participants’ awareness levels
+under different conditions in each story with a specific form of misinformation injected. The majority of participants (62.162 − 86.486%)
+in all conditions failed to detect the misinformation. Despite that,
+we found a significant marginal impact of the conditions on participants’ awareness of misinformation (χ 2 (2) = 5.53, p=0.063) across
+the three misinformation types using the Kruskal-Wallis test. We
+further employed Dunn’s post-hoc tests with Holm correction for
+pairwise comparisons. The results show that participants’ awareness
+of misinformation under the Linking condition is significantly higher
+than that under the Static condition (Z = -2.29, p = 0.033). But we
+did not find significant effects of Annotation over the awareness.
+Considering the three stories with different forms of misinformation separately, we compared the awareness under the Annotation
+and Linking conditions with the one under the Static condition by
+running Mann-Whitney’s U test. We found that in COVID-19 story
+with contradictory slant, Annotation has a significant effect on participants’ awareness of misinformation (U=2303.5, p=0.039, r=0.159).
+No other statistical significance was found.
+
+Measures
+
+We collected four groups of data from the online study:
+• pre-study questionnaire;
+• participant perceptions to the reading experience of each story;
+• participant-claimed detected misinformation;
+• qualitative feedback after the fact-checking phase.
+We measured the participant perceptions to the reading experience
+via questions covering the four aspects: (1) attention checking.
+As suggested by Borgo et al. [3], it is important to check if the
+crowd workers pay attention to the tasks. Hence, for each story,
+we asked two multiple-choice recall questions and an open-ended
+story-summairzation question to test if the participant read the story
+carefully. We only accepted submissions from participants who answer at least three (out of six from all three stories) multiple-choice
+questions correctly and provide a informative story summary with
+no fewer than five words; (2) visualization usefulness. We asked
+participants to self-evaluate the usefulness of the visualization of
+the story they just read via a five-points likert scale. (3) perceived
+credibility. We adapted the credibility scales from Kong et al. [27] to
+measure the perceived credibility to the text and visualization. More
+specifically, the participants rated the text and the visualization of
+the just-read story from five perspective: accuracy, fairness, trust-
+
+146
+
+

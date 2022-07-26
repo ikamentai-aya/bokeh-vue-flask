@@ -1,0 +1,127 @@
+were positively appreciated. “I like the site overview part because,
+the first time I used the system, it felt like a lot of information was
+thrown at me and I didn’t know where to start from” (u1). “The
+cluster annotation is really good. Earlier it was a little harder than
+the present system” (u3). All three expert users (u1–u3) reiterated
+their earlier comments that systems like News Kaleidoscope would
+be useful for their work, highlighting the lack of accessible visual
+analytics systems for studying news corpuses: “I still continue to
+think this will be a useful tool. It’s something I could see myself
+using in research.”(u3).
+7
+
+this type of analysis, and we intend to extend News Kaleidoscope to
+better focus on this type of evolutionary analysis.
+Explicitly labeling bias in news stories? Several news novices
+requested explicit bias labeling of articles and news sites, however
+we are cautious that such an approach is necessary or even appropriate. Ex ante labeling inherently reduces the power of empirical
+analysis by anchoring users to the classification outputs of a model.
+When considering coverage diversity in the context of specific news
+events, explicit bias labeling might poorly account for sites that publish contrasting viewpoints such as editorials and opinion articles.
+Interfaces that can provide an initial bias labeling while accounting
+for such nuances (perhaps via uncertainty or probabilistic techniques)
+are one strategy, but we leave this as future work.
+Alternate visual encodings for News Kaleidoscope Though we
+found that News Kaleidoscope successfully supports the analysis of
+the coverage diversity of news articles, in the future we intend to
+look at ways to improve the analytic process via alternative visualization and analytical approaches. As an example, instead of showing
+a flat clustering of retrieved articles (in the Ordination Panel), a
+hierarchical topics tree could instead be constructed, with individual
+nodes representing topics constructed from relevant keywords, entities, and/or biases. Coverage diversity could be demonstrated by
+analyzing and interacting with the tree’s structure; for large trees,
+aggregation and simplification techniques would likely need to be
+employed (e.g., [49]).
+
+D ISCUSSION
+
+While there are many existing text visualization tools in existence,
+based on our experience in developing and evaluating News Kaleidoscope, we believe that interfaces tailored specifically for news
+reporting analysis can better benefit both for news experts and news
+novices. News Kaleidoscope design was intended to elicit nuanced
+analysis of coverage diversity via the subselection workflow. To
+understand the implications of this design study, we comparing the
+insights and workflow themes between the news expert and novice
+users, and discuss how they can guide the design of visualization
+systems for news reporting analysis.
+Novice news users recognize diversity, news experts can see
+research possibilities. While both user groups agreed that News
+Kaleidoscope supports the analysis of coverage diversity, one main
+takeaway from the studies is that insights differ based on the user’s
+experience. Novice news users were able to assert that coverage diversity exists in the articles written about news events, but generally
+could not make strong conclusions or broad inferences about bias.
+News experts, already familiar with coverage diversity and media
+bias, were able to use the system to see deeper nuances about coverage diversity. Analysis systems for news novices can be tailored to
+accommodate their lack of domain expertise.
+Explainability on demand improves sensemaking. No users
+in our evaluation were experts in data visualization or NLP. While
+both user groups could understand and interact with the interface’s
+visualizations, many participants wanted more explainability, particularly when data points or clusterings displayed in unintuitive or
+unexpected ways. Such desires echo recent trends in explainable
+machine learning and artificial intelligence, where transparent and interpretable models are desired to promote trust in and understanding
+of predictions [30]. The explainability features added for Study #3
+were non-disruptive to the overall user experience, but they were
+positively received in our follow-up sessions with participants.
+The need for visualization tools in journalism research.
+Study #1 participants were researchers in journalism and political science, but none had previously used visual analytics tools like
+this. While systems similar to News Kaleidoscope have previously
+been published in the visualization community, the lack of adoption
+by our participants indicates that wider dissemination would benefit other communities. Tools like this also motivate an interesting
+question for these communities: If coverage diversity is identified,
+how can we reduce media bias? This is a non-trivial problem, but
+we believe visualization can likely provide an important step in the
+process, by helping researchers identify where issues are present.
+Visually analyzing the temporal dynamics of news coverage.
+Some participants in Study #1 noted temporal analysis as an important facet of coverage diversity: “Development of news stories
+over time is interesting . . . I personally for my research loved the
+time evolution in both the cases especially the emotions over time,
+that is a really informative information in journalism” (e7). While
+News Kaleidoscope provides a limited amount of temporal analysis,
+systems that focus on the temporal (and unique) dynamics of news
+stories are lacking. For example, reporting about events evolves over
+time as more facts are learned and media analysis and commentary
+is conducted. Future visual analytics systems can be tailored towards
+
+8
+
+C ONCLUSION
+
+We contribute News Kaleidoscope, an interactive visual analytics
+system that supports analysis of news events with a focus on the coverage diversity of reporting articles. News Kaleidoscope is designed
+based on a formal task abstraction for news experts and combines
+several NLP and visualization techniques into an accessible user experience based around keyword subselections in article sets. Based
+on a holistic, three-part evaluation, we find that News Kaleidoscope
+supports different types of insights based on the journalistic domain
+expertise of the user: news novices are able to recognize coverage
+diversity at a high-level, but news experts can contextualize it for
+deeper insight, such as by characterizing articles according to their
+extracted emotional styles. Study results motivate several guidelines
+and takeaways for future systems that visualize coverage diversity,
+including the importance of explainability for non-technical users
+and that the temporal, comparative, and summary dynamics of news
+events and coverage can be emphasized.
+R EFERENCES
+[1] Trends and facts on online news — state of the news media — pew
+research center. https://www.journalism.org/fact-sheet/
+digital-news/.
+[2] Media bias ratings — allsides. https://www.allsides.com/
+media-bias/media-bias-ratings, 2020.
+[3] The Center for Media and Public Affairs — George Mason University.
+https://cmpa.gmu.edu/, 2020.
+[4] Types of media bias and how to spot it — allsides.
+https://www.allsides.com/media-bias/
+how-to-spot-types-of-media-bias, 2020.
+[5] E. Alexander, J. Kohlmann, R. Valenza, M. Witmore, and M. Gleicher.
+Serendip: Topic model-driven visual exploration of text corpora. In
+2014 IEEE Conference on Visual Analytics Science and Technology
+(VAST), pp. 173–182. IEEE, 2014.
+[6] R. Arias-Hernandez, L. T. Kaastra, T. M. Green, and B. Fisher. Pair analytics: Capturing reasoning processes in collaborative visual analytics.
+In 2011 44th Hawaii international conference on system sciences, pp.
+1–10. IEEE, 2011.
+[7] D. M. Blei, A. Y. Ng, and M. I. Jordan. Latent dirichlet allocation.
+Journal of machine Learning research, 3(Jan):993–1022, 2003.
+[8] N. Cao and W. Cui. Overview of text visualization techniques. In
+Introduction to Text Visualization, pp. 11–40. Springer, 2016.
+
+139
+
+

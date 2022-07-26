@@ -1,0 +1,128 @@
+3.2
+
+that dynamically links text with relevant visualizations. Such a technique can effectively guide readers through the author’s intended
+narratives. Zhi et al. [57] investigate two forms of text-visualizationintegration methods – layout and linking. They found slideshow
+layout with linking can improve readers’ recall of and engagement
+with a narrative visualization. Wang et al. [55] compared different
+narrative visualization types and found increasing text-visualization
+integration can promote reader’s understanding. Our study focuses
+on two design methods to connect textual and visualization components in data stories, i.e., Annotation and Linking. Both of them are
+commonly used in designing magazine-style narrative visualization.
+Moreover, there exist fast algorithms [28, 30] to implement these
+two design methods, which make them easy to promote.
+3
+
+By searching for related publications in TVCG, CHI, and other relevant venues, we synthesize in detail 17 number of the most relevant
+literature. We identify possible misinformation causes in every step
+of the pipeline proposed above from the literature. We present these
+causes and corresponding literature in Table. 1. Besides, we also
+consult works from journalism and psychology to survey more possibilities of causes of misinformation. Next, we put the resulting
+list of possible causes of misinformation in the context of narrative visualization production and consumption and divide them into
+three categories: author-induced reader-undetectable misinformation (AIRUM), author-induced reader-detectable misinformation
+(AIRDM) and reader-induced misinformation (RIM).
+Author-Induced Reader-Undetectable Misinformation By
+AIRUM, we mean false or inaccurate information injected into
+the production process through manipulations invisible to readers. AIRUM mainly occurs in the Analyzing step. For instance,
+authors might only pick those data that support their intention or
+even falsify data to meet their claims [10]. Readers with external
+knowledge about the data story and its context might be able to find
+such AIRUM; however, it cannot be corrected based only on the
+information provided by the authors.
+Author-Induced Reader-Detectable Misinformation We define AIRDM as miscommunication rooted in the production process
+but can be detected by careful readers. Such misinformation might
+concern Visualizing, Scripting, and Arranging steps as the intersection of the production and consumption processes illustrated in Fig. 3.
+Authors’ decisions in these steps are directly reflected in the output,
+and skeptical readers can spot the misleading elements. Deceptive
+visualization is a well-known cause of AIRDM in the Visualizing
+step. The author may truncate the axis or take area as the quantity
+that misleads readers intentionally or unintentionally [45]. Readers
+can capture the existence of such misinformation by comparing the
+difference(s) between the deceptive chart and the conventional ones.
+Text-visualization misalignment is a typical example of AIRDM that
+occurs in the Scripting step [27]. The author may manipulate the
+text-chart correspondence to (mis)guide the reader’s attention, but a
+vigilant reader can find misalignment through close inspection.
+Reader-Induced Misinformation RIM refers to the misperception that happens during the consumption process and depends on
+how the visual argument(s) are read in real-world situations. This
+kind of misinformation relates primarily to the Reading step. The
+value, belief, and the information exposure environment of an individual could all cause misreadings [19, 38]. RIM impact readers
+differently. Authors’ decisions in the production process can change
+the tendency of a message being more deceptive or not, but cannot
+fully determine whether the story will mislead readers [49].
+Combating AIRUM requires a more rigorous authoring method
+(e.g., metamorphic testing [37]). To fight RIM, promoting education
+on data and visualization is one of the directions currently under
+consideration by academics [15]. As for mitigating AIRDM, a
+plausible approach is presenting the data story in a way that allows
+readers to scrutinize it easier [49]. Therefore, in the scope of this
+paper, we focus on AIRDM and conduct a crowdsourcing study to
+explore whether different narrative visualization designs may affect
+readers’ awareness of such misinformation.
+
+M ISINFORMATION IN N ARRATIVE V ISUALIZATION
+
+McNutt et al. propose a pipeline of visual analytics to investigate
+how errors generated in each phase may undermine messages conveyed in the final visualization [37]. We are inspired to adopt a
+similar approach to obtaining a comprehensive view of the relationships between critical narrative visualization creation steps and the
+types of misinformation that can be introduced to mislead readers.
+To this end, we first construct a pipeline that dissects the productionconsumption process of data storytelling (covered in subsection 3.1)
+and then conduct a literature survey to identify possible sources of
+misinformation (following the definition in subsection 2.1) at each
+stage of the pipeline (detailed in subsection 3.2).
+3.1
+
+Where does Misinformation Come from?
+
+Data Storytelling Process
+
+Our pipeline is mainly adapted from Lee et al.’s visual storytelling
+process [33] while also motivated by previous works about visual
+analytics [8, 37]. As we are more concerned with how possible
+falsified information injected in the production-consumption process
+and lead to readers’ misperceptions of facts, we follow McNutt et
+al.’s [37] practice and omit complex cycles and nested sub-process [8,
+33] to enable easy tracing of the origin of misinformation.
+Our pipeline describes the path from raw data to the perceived
+message by five main steps, namely, Analyzing, Visualizing, Scripting, Arranging, and Reading (see Fig. 3). We further conceptualize
+the production process as steps involving authoring actions and the
+consumption process as steps of which the output will be directly
+perceived by readers. According to this, Analyzing is only related
+to the production process and Reading is only associated with the
+consumption process. Visualizing, Scripting, and Arranging are
+involved in both the production and the consumption processes. The
+detailed definitions of these steps are as follows:
+Analyzing denotes the process that authors analyze the raw data
+to extract data facts that they intend to convey [8, 33]. In this step
+authors determine what to tell (and not to tell) in the final data story.
+Visualizing characterizes the process that authors create charts to
+visually communicate the complied data facts to readers [37]. Note
+that the charts here refer to the graphics readers actually see in the
+final data story, not the ones that are used to analyze the raw data.
+Scripting indicates the process that authors organize multiple data
+facts and their corresponding charts into a certain narrative structure,
+including ordering, designing interaction, and messaging [51]. The
+goal of this stage is to combine the scattered fragments of facts into
+a complete story to convey author-driven narratives [22, 34, 51].
+Arranging indicates the process that authors lay out multiple
+pieces of texts and/or charts in a scene and build the visual narrative
+flow for the readers [8, 36]. Note that Arranging is concerned with
+the format of the data story but not the content.
+Reading indicates the process that readers decoding information
+of the data story including the text and visualizations. The final
+message that readers derive is a result of the interplay between the
+presented information of the data story and their inherent knowledge,
+purpose and beliefs [6, 17].
+
+4
+
+S TUDY D ESIGN
+
+We designed a crowdsourcing user study to explore the possible effects of two widely-used design methods in narrative visualizations,
+explanatory annotation (Annotation) and interactive linking (Linking), on readers’ awareness of misinformation in data stories. The
+misinformation we tested in the study is the type of author-induced
+reader-detectable misinformation. More specifically, two types of
+deceptive visualization [45] and one type of text-visualization misalignment [27] were used.
+
+143
+
+

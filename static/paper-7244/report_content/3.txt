@@ -1,0 +1,116 @@
+and instead allow users to directly query for a topic of interest based
+on high-level keywords and other constraints (date, source, etc.).
+DR2: Provide a high-level overview of coverage diversity. Participants normally reviewed the retrieved articles about a news topic
+in an iterative manner (e.g., as a list), which could quickly become overwhelming. The participants described that providing an
+overview of the retrieved articles about the news event of interest, in
+a way that emphasises the general (i.e., high-level) trends or groupings of the coverage diversity, would provide an initial sense of the
+event’s coverage diversity. Such a view would also function to drive
+subsequent analysis, via an overview-plus-details workflow [44].
+DR3: Select subsets of articles to analyze coverage diversity
+polarities. In addition to providing high-level overview of an event’s
+coverage diversity, participants described wanting to investigate specific polarities in reporting—subsets of articles containing interesting
+biases or semantics compared to the rest of the reporting articles.
+Analyzing the second-level keywords in these polarities, as well
+as the presence of polarity-specific emotional media biases, would
+provide nuanced understanding of the coverage diversity for a news
+event. Participants also desired that such analyses be able to commpare both within and across article subsets. In other words, selecting
+article subsets should enable detailed analysis of coverage diversity
+polarities via tailored visualizations.
+DR4: Provide data-level explanations to ensure trust and verification. For users not familiar with complex NLP and/or data
+mining processes, it is important to provide trust and interpretability
+of models and algorithms to non-expert users [30]. In our discussions about these topics, our participants were wary about simply
+trusting the outputs of algorithms or models they had little insight
+into. For example, in discussing the clustering of news articles, participants wanted to know why an articles might be binned a certain
+way. Thus, when advanced computational techniques or models are
+employed, mechanisms should be employed to promote trust and
+interpretability of model recommendations and decisions.
+DR5: Visualization complexity should account for user expertise. Like the majority of journalism researchers, our participants
+were not experts in advanced visualization interfaces. This means
+that overly complex or esoteric visual designs could can lead to a
+failure in conveying information succinctly and easily. Instead, interface designs should strike a balance between providing sufficient
+analytic capabilities while also being approachable and intuitive to
+use. News Kaleidoscope is built with these considerations in mind,
+and validated in the user studies described in Section 6.
+4
+
+For each article in the corpus, we apply a trio of heuristics as preprocessing steps: keyword identification, named entity recognition,
+and determination of emotional style. Keywords from an article
+are extracted via the Gensim NLTK library [32]. Named entity
+recognition follows a similar process. We use the Stanford NER
+library [20] to extract named persons, locations, and organizations
+in each article. These are stored to a set of three vectors for each
+article: one for names, one for locations, one for organizations. Vectors are extracted using the bag of words technique for each article
+retrieved, where the presence or an absence of a word is encoded as
+a 1 or a 0, respectively. While keywords and entities might at first
+glance seem redundant, there are important semantic differences.
+Keywords give a broad sense of the topical content of an article,
+but the individual words are unclassified. In contrast, entities are
+specifically binned into classes, providing the user with an explicit
+set of relevant, descriptive proper nouns.
+The third heuristic characterizes the emotional style of each article. We use Plutchik’s discrete categorical model [39] to classify
+emotional states into eight primary emotions, organized as the following pairs: anger-fear, anticipation-surprise, joy-sadness, and
+trust-disgust. The NRC lexicon [38] (which is based on Plutchik’s
+model) extracts and classifies emotional words contained in an article. We then compute the frequency of words for each emotion in
+the article. Specifically, we construct a 1 × 8 vector (e1 , e2 , ....e8 ).
+Each ei equals ni /N, where ni is the number of words for that particular emotion, and N is the total number of words in the article
+(after stop-word removal). This means each article has an emotional vector of length = 8, where each ei represents how much of
+that particular emotion exists in the article’s text. Using this multidimensional characterization enables a much more robust analysis
+compared to simpler positive/negative sentiment models (e.g., the
+popular Stanford CoreNLP library [36]).
+4.2
+
+The backend server is built using Node.js [48] and acts as the storage and service layer between the processed data and the frontend
+interface. News articles—along with extracted keywords, entities,
+and emotional style vectors—are stored to a SQL database.
+Based on a user query—which can include constraints such as
+date, keywords, news sites to include/exclude, and the number of
+articles to retrieve—we retrieve articles from the database (DR1)
+and rank them using TF-IDF [41]. Specifically, we consider the
+query as a single small document and calculate the TF-IDF for each
+article in the database that meets the date/site constraints, using this
+to sort the articles by relevance. The desired number of articles are
+then returned. For this returned collection of articles, we compute
+their aggregate pairwise distances for the overview visualization
+in the interface (DR2). This heuristic is a combination of three
+independent distance metrics: the preprocessed (1) keyword and (2)
+entity vectors, and also (3) the temporal similarity of articles based
+on their publication dates.
+Keyword Distance. For all articles returned in a query, we compute the pairwise Jaccard similarity between their keyword vectors,
+normalized over the total number of words in each pair of articles.
+For articles a1 and a2 , their keyword distance dk (a1 , a2 ) represents
+how similar they are in terms of keywords on a scale between [0, 1].
+Entity Distance. Similar to keyword distance, for each article
+pair we compute the normalized Jaccard similarity combined from
+each of three entity vectors (name, location, and organization), and
+then normalize the value over the total entities in the paired documents. Thus, the entity distance between articles a1 and a2 is given
+by de (a1 , a2 ), again on a scale from [0, 1].
+Temporal Distance. Given that a news event generally happens
+over a discrete timeframe, we assume that reporting articles published in close temporal proximity (such as on the same day) might
+be more similar, as news coverage tends to evolve as follow-up
+
+T HE N EWS K ALEIDOSCOPE S YSTEM D ESIGN
+
+We now describe News Kaleidoscope’s system design. The system
+is a full-stack application with three primary facets: (1) a data preprocessing step, (2) a backend server for data storage, query, and
+NLP-based computation, and (3) a frontend interface for visualization and interaction. For examples of how News Kaleidoscope can
+be used to analyze coverage diversity, see the use case in Section 5
+and the demo video include in the supplemental materials.
+4.1
+
+Backend Server
+
+Data Corpus and Preprocessing
+
+When describing News Kaleidoscope, we use a large news article
+dataset titled All the News [47]. This text corpus contains 143, 000
+articles published on 14 news sites from 2015–2017 and includes
+both the article text and related metadata (title, news site name, author, publication date, article URL, etc.). The news sites are Western
+media organizations (the only non-American site is The Guardian)
+across a spectrum of perceived liberal-to-conservative political biases. Figure 4 includes a list of the 14 news sites and labels their
+“media bias ratings” as scored by the AllSides organization [2]. By
+using this diverse corpus as a dataset, we ensure that reporting on
+news events will likely have a high degree of coverage diversity.
+
+133
+
+

@@ -1,0 +1,82 @@
+are of most importance in our visualization.
+Transforming numeric attributes to categorical attributes: The
+original Parallel Sets [27] showed how value ranges can be used to
+adopt numeric attributes in a Parallel Sets visualization by allowing
+users to specify value ranges of interest. We allow two options to
+automatically create such value ranges: one is partitioning the range
+of the attribute into some equal parts, and the other is to partition
+the range using quartiles. Both these two options (Figure 3) can be
+useful in practice. For example, quantile ranges of a variable are
+often used to examine regional extreme, and uniform variable ranges
+are often used to understand amount of data points at each interval.
+
+are merged together and labelled as ‘other’. We set a small fixed
+width for the merged section, which improves the available space for
+the categories that have not been merged. Since not all the categories
+are now visible, an obvious remedy is to filter the categories based
+on users’ needs, however, it is also possible to scroll at an axis to
+add more categories from the bottom end (‘other’ section) whereas
+the categories from the top join the ‘other’ section.
+In an worst case scenario, this may require rendering α k ribbons, where k is the number of attributes. Hence the performance
+(rendering speed and interactivity) may decrease for five or more
+attributes depending on the data. If more attributes are needed to be
+displayed, one can define a smaller value for α (even can customize
+the parameter for each axis).
+Color encoding for the ribbons: We color a ribbon to represent
+its category on the first axis, which follows original Parallel Sets
+design [27]. More specifically, we assign each category on the first
+axis using a distinct color. One can choose a color map based on the
+categories (qualitative color map for discrete options, or diverging
+color maps for numeric ranges). Let σ be the ordering of the colors
+from top to bottom. We then color each ribbon based on which
+category it belongs to on the first axis. For a category (for any
+attribute), there exists a vertical line interval intersected by a number
+of ribbons. The ribbons are ordered based on σ such that while
+examining such an interval, users can quickly recall where these
+ribbons are located at the first axis.
+Texture encoding for the ribbons: We augment the original Parallel Sets [27] by adding texture to the ribbons. The textures are
+rendered on the ribbons from the second axis. We assign each category on the second axis using a distinct texture pattern. We then
+render a texture on each ribbon based on the category it belongs to
+on the second axis.
+We allowed different texture patterns: one is a dotted pattern
+with different opacity (Figure 1), a second one with oriented lines
+(Figure 5), and we also examined arbitrarily chosen texture (Figure 6(left)). The first one is intuitive to understand, but does not work
+well if the category contains more than 4 attributes. The rationale
+behind allowing the second one (line-orientation pattern) is that for
+numeric ranges, the higher value ranges will naturally correspond
+to a larger angle of inclination of the lines with the x-axis. If the
+number of categories is at most four, then we use the first, third, fifth
+and seventh patterns. Even when the categories correspond to some
+discrete non-numeric options, this natural texture ordering is likely
+to allow users to easily recall their top to bottom ordering on the
+second axis. Figure 6 compares our texture pattern (right) with a
+texture pattern (left), which was chosen arbitrarily.
+
+Figure 3: Users can explore two S ET-S TAT-M AP design by placing
+them one top of each other. For example, the top view shows an
+attribute transformation with quartile ranges, and the bottom view
+uses eight equal bins.
+
+Limiting the number of categories: A large number of categories
+for each attribute may create a large number of ribbons in the original Parallel Sets visualization [27], which dramatically reduces the
+width of the ribbons. It not only consumes expensive resources for
+rendering, but also makes some ribbons hard or even impossible
+to see. To improve this situation, we apply a configurable ‘maximum category’ limitation for each axis and merge the remaining
+categories. This greatly reduces the number of ribbons that need to
+be rendered. Figure 4 illustrates such an example.
+
+Figure 5: Illustration for the texture mapping for increasing data values
+(from left to right).
+
+Figure 4: Parallel Sets (left) without any merged set and (right) with
+merged set. The number of categories at the last axis is limited to six,
+where the bottommost category is the merged one.
+Figure 6: Parallel Sets (left) with arbitrary textures, and (right) with
+line-orientation based textures.
+
+In a default setting, we limit the number of categories per attribute
+to be displayed to a small number α ≤ 8. The rest of the categories
+
+154
+
+

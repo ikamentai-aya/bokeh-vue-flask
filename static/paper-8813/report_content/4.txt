@@ -1,0 +1,128 @@
+Table 1: Possible causes of misinformation in every step of the production-consumption of narrative visualization. This table is not exhaustive
+but shows possible causes of misinformation. The lists in Analyzing and Visualizing steps are simplified from [37].
+Step
+
+Causes of Misinformation
+
+Description
+
+Analyzing
+
+Cherry Picking
+
+Filter out data that is not conducive to the author’s intended narrative [10]
+
+The Simpson’s paradox
+
+high-level aggregation of data leads to wrong conclusion [21]
+
+Visualizing
+
+Break Conventions
+
+Create unusual charts that mislead people to analyze them with conventions [13, 31, 45]
+
+Concealing Uncertainty
+
+Conceal the uncertainty in the chart to cover up the low quality of the data [50]
+
+Scripting
+
+Text-visualization misalignment
+
+The message of the text differs from that of the visualization it refers to [26, 27]
+
+Text Wording
+
+The degree of text intensity can bias readers’ memory of graph [43]
+
+Illusions of causality
+
+The text makes incorrect causal inductions on chart information [32, 35, 35]
+
+Obmiting context
+
+Omitting the context needed to understand the story [14]
+
+Manipulating order
+
+Manipulate the reading order through layout, resulting in order bias [16]
+
+Arranging
+
+Obfuscation
+
+Make it difficult for readers to extract visual information through chaotic layout [13]
+
+Reading
+
+Personal bias
+
+Political attitudes, beliefs and other personal factors lead to misperception of facts [19, 38]
+
+Figure 3: The production-consumption process of narrative visualization
+
+4.1 Story Selection
+We collected candidate data stories for the study either from wellknown media (e.g., New York Times) or from influential information
+publisher (e.g., Our World in Data). In the selection process we took
+several factors into careful consideration. Most importantly, we
+focused on topics like health and climate changes where misinformation prevail [9, 11, 49]. Then, we chose interesting and relevant
+stories to motivate reading. Last but not least, we require that the
+text in a given story must reference some part(s) of the visualization
+to increase the likelihood that readers would attend to both types
+of contents. We also need the original data behind the stories to
+ensure the feasibility of embedding misinformation into the selected
+narrative visualization.
+After several rounds of careful screening and discussions, we
+finally selected three short stories from three articles for our study:
+• COVID-19 story1 : it presents the changes of infected cases
+during the COVID-19 epidemic in Brazil from June 2020 to
+January 2021 using a line chart. The text refers to the visualization to explain public policies, like reopening tourist
+attractions, adopted by the Brazil government.
+• Obesity story2 : it stresses that obesity has become a critical
+risk factor for increasing mortality, by comparing the significance of obesity as a cause of death to other risk factors like
+smoking in a bar chart.
+• Carbon Emission story3 : it argues that developing countries
+shouldn’t rely on fossil fuels for development as what the
+developed countries have done in the past. A bar chart is used
+
+to compare the per person carbon emissions (metric tons CO2)
+of several countries in 2014. China is highlighted to illustrate
+the opinion.
+We did not use the entire article but extracted sections that related
+to the visualizations. We also slightly edited the sections to make the
+three stories have similar length (COVID-19 & Obesity: 117 words;
+Carbon Emission: 109 words).
+4.2 Visualization Design
+For each selected story, we obtained its data from the source website. We then reproduced the narrative visualizations. As the three
+stories’ original text formats and layouts differ greatly, we unified
+their styles in our reproduced version by referencing online article
+styles in New York Times. For visualizations, we only included
+elements concerned with the text we used in the study to avoid noise.
+This process resulted in a line chart for the COVID-19 story, a
+horizontal bar chart for the Obesity story, and a vertical bar chart
+for the Carbon Emission story as in Fig.4. Then, building on this
+basic data visualization, we designed and implemented the three
+conditions for our experiment.
+1. Static Illustrated Text (Static). Text paragraphs are placed on
+the left side of the page, and the visualization is displayed on
+the right. Text and the visualization are separated, and for all
+stories, they take similar space in the experimental website.
+2. Explanatory Annotation (Annotation). Text which has no connection to the visualization is put on the left. Each text relevant
+to a particular part of the visualization is formatted as an annotation enclosed in a textbox. Every annotation locates near
+the corresponding part in the visualization and has an arrow
+pointing to it. The layout of annotations and arrows is crafted
+manually to avoid blocking essential contents of visualization.
+No hints are implying the reading sequence of annotations.
+3. Interactive Linking (Linking). The layout of text and visualizations is identical to that in the illustrated text condition. Sen-
+
+1 https://www.nytimes.com/interactive/2020/world/ameri
+cas/brazil-coronavirus-cases.html
+2 https://ourworldindata.org/obesity
+3 https://www.nytimes.com/interactive/2017/06/01/clima
+te/us-biggest-carbon-polluter-in-history-will-it-walk-aw
+ay-from-the-paris-climate-deal.html
+
+144
+
+

@@ -1,0 +1,98 @@
+2022 IEEE 15th Pacific Visualization Symposium (PacificVis)
+
+Evaluating the Effect of Enhanced Text-Visualization Integration on
+Combating Misinformation in Data Story
+Xiaojuan Ma†
+
+Chengbo Zheng*
+
+Hong Kong University of Science and Technology
+
+A BSTRACT
+Misinformation has disruptive effects on our lives. Many researchers
+have looked into means to identify and combat misinformation in
+text or data visualization. However, there is still a lack of understanding of how misinformation can be introduced when text and
+visualization are combined to tell data stories, not to mention how
+to improve the lay public’s awareness of possible misperceptions
+about facts in narrative visualization. In this paper, we first analyze
+where misinformation could possibly be injected into the productionconsumption process of data stories through a literature survey. Then,
+as a first step towards combating misinformation in data stories, we
+explore possible defensive design methods to enhance the reader’s
+awareness of information misalignment when data facts are scripted
+and visualized. More specifically, we conduct a between-subjects
+crowdsourcing study to investigate the impact of two design methods
+enhancing text-visualization integration, i.e., explanatory annotation
+and interactive linking, on users’ awareness of misinformation in
+data stories. The study results show that although most participants
+still can not find misinformation, the two design methods can significantly lower the perceived credibility of the text or visualizations.
+Our work informs the possibility of fighting an infodemic through
+defensive design methods.
+
+Figure 1: (A) [40]: Narrative visualizations combining rich text
+and visualizations in online mass media. (B) [1]: Combine text and
+visualization to tell stories on social media
+
+there is a pressing demand for in-depth understanding of how problematic design can mislead readers and bring misinformation.
+Moreover, there lacks effective methods that can help lay public
+stay aware of misinformation in narrative visualizations. Previous
+works have explored how to uncover visualization mirage in visual
+analytics process [37] and how to reveal and repair chart errors [7].
+Nevertheless, the interplay between text and visualization in narrative visualizations is rarely considered. A common approach to
+combat misinformation is performing automatic or manual factchecking [56]. While the number of fact-checking services and
+algorithms for textual information is growing rapidly [56], not many
+of them could efficiently and cost-effectively detect misinformation
+in narrative visualizations.
+Facing the aforementioned challenges, in this paper, we begin by asking, “How might misinformation be introduced into
+narrative visualization?”. To this end, we first conducted a literature survey and derived a pipeline that describes the data storytelling production-consumption process. Then, we analyzed
+every stage of this data storytelling pipeline to identify possible causes of misinformation and then grouped these causes into
+three categories: author-induced reader-undetectable misinformation (AIRUM), author-induced reader-detectable misinformation
+(AIRDM) and reader-induced misinformation (RIM).
+Next, we proceed to explore possible methods to combat misinformation. Countering AIRUM and RIM might involve moderating
+the behavior of authors and readers of data stories [15, 37], whereas
+mitigating AIRDM could be achieved by better scrutinizing the presented data stories. We thus focus on AIRDM in this paper. Besides,
+as the first step towards combating misinformation in data stories,
+we focus on the magazine-style of narrative visualization, which
+is popular in journalism [57]. We target two typical issues for the
+magazine style under AIRDM : (1) deceptive visualization [45], and
+(2) text-visualization misalignment [27].
+As discussed above, there are still technical barriers to detecting
+misinformation in data stories. As an alternative, we are interested
+in exploring whether there exist some defensive design methods to
+enhance people’s awareness of misinformation, which can prevent
+readers from falling for problematic data stories in the first place.
+
+Index Terms:
+Human-centered computing—Visualization—
+Visualization design and evaluation methods
+1
+
+I NTRODUCTION
+
+In recent years, the proliferation of misinformation on online media
+has become a paramount public concern. During the COVID-19
+pandemic, misinformation, such as ingesting bleach as a coronavirus
+treatment, is a serious threat to public health [49]. While it is widely
+known that false or inaccurate information can be disseminated
+through text and/or images, visualizations appear to be another
+increasingly popular vehicle for misinformation [13, 34, 45]. Due
+to its persuasive power [44], visualization may be an even more
+dangerous yet harder to detect tool to manipulate people’s opinion.
+A typical example of misinformation in visualizations is the inverted
+axis, which breaks the conventional direction of the axis and makes
+readers receive a reversal message to the facts [45].
+Prior research has investigated misinformation existed in standalone visualization, e.g., bar chart [31, 45], thematic maps [12], etc.
+However, few studies are concerned with how misinformation can be
+introduced in narrative visualization. One popular form of narrative
+visualization as presented in Fig. 1 consists of rich text providing
+contextual information and some key piece(s) of fact expressed by
+data visualization [33]. It is commonly known as illustrated text [55]
+(also magazine style [51]). While existing research efforts on narrative visualizations mainly concern facilitation of its creation [52],
+* e-mail: cb.zheng@connect.ust.hk
+† e-mail: mxj@cse.ust.hk
+
+2165-8773/22/$31.00 ©2022 IEEE
+DOI 10.1109/PacificVis53943.2022.00023
+
+141
+
+

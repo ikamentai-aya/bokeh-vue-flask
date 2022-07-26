@@ -1,0 +1,114 @@
+3.2
+
+Statistics Columns View
+
+A statistics column can be sorted by clicking on the column
+header. Sorting a column will reorder both the rows and the intervals
+of the last axis of the Parallel Sets view. For example, in Figure 3,
+the MaxTemp column is sorted and the months are reordered based
+on this sorting (instead of being chronologically ordered from Jan.
+to Dec.). The users can filter the data records by drawing rectangles
+on the map view. This updates the ribbons in the Parallel Sets view
+and the plots on the statistics columns.
+A novel interaction that S ET-S TAT-M AP introduces is interval
+selection. By selecting a vertical interval of an axis in the Parallel
+Sets view, the user can render the information (data records) of
+all the ribbons passing through that interval on the map. For the
+weather dataset, selecting such an interval (e.g., May) on the last
+axis (Month) would render all the tiles corresponding to this month
+on the map. We can thus see the spatial distribution of the first and
+second axis through color and texture distribution, respectively. This
+is illustrated in Figure 7(top), where by selecting the interval May at
+the Month axis, we can observe higher MaxTemp and precipitation
+at the south-west region and the opposite trend at the north-east
+region. In fact, this selection operation generalizes to the intervals of
+all the axes of the Parallel Sets, e.g., selection of the second interval
+of the Relative Humidity axis (Figure 7(bottom)) blends all the tiles
+corresponding to that interval over all months to depict a yearly trend.
+The map view of Figure 7(bottom) illustrates the yearly distribution
+of the first axis (MaxTemp) through the color distribution on the
+map, where we can immediately see a high variation of temperature
+within the selected humidity range at the north-east map region.
+However, using such an interval selection in the intermediate axis
+would require using simple textures such as dots to avoid visual
+clutter due to texture overlap.
+
+The statistics column view consists of a set of numerical attributes.
+Each attribute is visualized in a column, where the rows are determined by the last axis of the Parallel Sets design (e.g., the months
+in Figure 1 create 12 rows in the statistics columns view). The jth
+row in a column (i.e., a cell) can be a box plot or a bar representing the summary statistic of the jth category of the last axis of the
+Parallel Sets. The box plot gives information about the quartiles
+and data range, and the bar plot shows the average value of the set
+(determined by the jth category) for the corresponding attribute.
+The background of a cell is filled using a linear color gradient using
+the colors present in the jth category. Let I j be the vertical interval
+corresponding to the jth category. Then the width of a color range
+in the jth row is determined by the proportion of interval taken by
+the corresponding ribbon at I j . We use the color order as it appears
+on I j and set the height of a cell to be equal to the length of I j .
+The rationale behind coloring the background of the cells is to
+provide users with the composition details for the categories of the
+first axis in the Parallel Sets design. Sometimes, the interval I j may
+be small and thus the ribbons may be hard to inspect. The gradient
+fill leverages the cell space to ease such inspection. The uniform
+cell space and linear ordering of the color gradients make it easier to
+compare various cell compositions visually with each other.
+3.3
+
+Map View
+
+The third component of S ET-S TAT-M AP is a map view. The data is
+geolocated (i.e., gridded with latitude and longitude information) at
+about 36 km spatial resolution and displayed using color gradient
+heat map on a Google map. The heat map relates to a specific
+category at the last axis of the Parallel Sets view, equivalently, a row
+at the statistics column. Once the user selects a specific row, the
+heat map cells containing those data records are displayed. Let D be
+the set of data records for a specific cell. If the first axis categories
+are numeric ranges, then each heat map cell is colored based on the
+average of the attribute values. If the categories are non-numeric,
+then the color is chosen based on the most frequent first axis category
+in D. Similarly, we determine the textures for the cells by analyzing
+the second axis attribute.
+While putting density plots or heat maps on map is selfexplanatory for geolocated datasets, however, the encoding used
+in our heat map requires further explanation. The heat map provides
+users with an idea of where the data points are located. One can
+change the heat map resolution to visualize the distribution with
+different levels of granularity. The rationale behind using the colors
+and textures is to provide a sense of connection with the other components, as well as to provide users with a distribution of the colors
+and textures. Such a distribution over a spatial domain allows users
+to examine how various pairwise combinations of categories from
+the first and second axis relate in spatially.
+3.4
+
+Coordination and Interaction Support
+
+Figure 7: Interval selection in Parallel Sets: (top) selection of a temporal range, and (bottom) selection of a variable value range. The
+statistics columns are omitted for space constraints.
+
+We coordinate the views by synchronizing the updates on different
+views. The standard interactions on the Parallel Sets [27] have also
+been implemented in our design. Since the colors and textures on
+the ribbons are based on the first and second axis, one can reorder
+the axis and choose the first or second axis based on their need. Such
+an interaction simultaneously updates the colors of the statistics
+columns and heat map. Similarly, changing the last axis of the Parallel Sets view changes the number of rows in the statistics column
+based on the categories on the new last axis. For example, changing
+the last axis of Figure 1 from monthly to seasonal (spring, summer,
+fall and winter) would create 4 rows in the statistics columns view
+instead of 12 rows that it currently shows. Removal of the month
+axis and using Wind as the last axis would also create 4 rows corresponding to the 4 intervals at the Wind axis. This happens also for
+the reordering of axes, e.g., see Figure 10-11.
+
+3.5 Design Rationale
+The S ET-S TAT-M AP design follows Baldonado’s [12] guidelines for
+designing multiple coordinated views. The three fundamentally different types of information (categorical, numeric, and geolocation)
+justifies leveraging the three views (Parallel Sets, statistics columns,
+and map). This follows the rules of decomposition, complementarity
+and parsimony, which suggests to partition complex data into multiple views to ease user comprehension, to provide complementary
+information to best leverage each view, and to use the views minimally (avoiding adding a view unless there is a significant benefit
+that justifies the cost).
+
+155
+
+

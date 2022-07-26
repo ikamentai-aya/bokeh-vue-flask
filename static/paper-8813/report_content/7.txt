@@ -1,0 +1,168 @@
+&DUERQ(PLVVLRQ6WRU\ ,QYHUWHG$[LV
+IXOO\DZDUH
+
+VRPHZKDWDZDUH
+
+2EHVLW\6WRU\ 7UXQFDWHG$[LV
+IXOO\DZDUH
+
+XQDZDUH
+
+VRPHZKDWDZDUH
+
+&29,'6WRU\ &RQWUDGLFWRU\6ODQW
+IXOO\DZDUH
+
+XQDZDUH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6WDWLF
+
+/LQNLQJ
+
+$QQRWDWLRQ
+
+
+
+6WDWLF
+
+/LQNLQJ
+
+$QQRWDWLRQ
+
+
+
+6WDWLF
+
+VRPHZKDWDZDUH
+
+/LQNLQJ
+
+XQDZDUH
+
+$QQRWDWLRQ
+
+Figure 6: The percentage of participants with different degrees of awareness in each story under the Static, Annotation and Linking conditions
+
+The above results show that although the effects are limited, Annotation and Linking did have promotions to participants’ awareness of
+misinformation. Linking is generally more effective than Annotation
+in improving participants’ awareness. We can see from Fig. 6 that
+in all three types of misinformation, the number of participants who
+were fully aware of misinformation under Linking is higher than that
+under Static. But for Annotation, although it had an advance in the
+COVID-19 story with contradictory slant, in Obesity story, it is even
+worse than Static.
+Figure 7: Correlations between six factors and two credibility scores
+5.2
+
+The Perceived Credibility to Text and Visualization
+
+After the participants read each data story, they scored their perceived
+credibility to the text and visualization. In this section, we present
+our findings deriving from analysing participants feedback.
+5.2.1
+
+(Mdn = 5.00) is significantly lower than the visualization credibility
+(Mdn = 5.20), Z = -3.64, p ≤ 0.001. But for stories with deceptive
+visualizations, we did not find similar significant differences.
+
+Does the perceived credibility differ?
+
+5.2.3 Does the perceived credibility correlate to other factors?
+
+We perform MANOVA tests to investigate the impact of condition
+(Static, Linking, and Annotation) on the two sets of credibility scores
+(for text and visualization respectively as mentioned in subsection
+4.6, also see Table. 3). Across different forms of misinformation, we
+could see that the condition has a significant effect on the credibility
+scores (Approx. F=4.658, Wilks’ λ =0.972, p=0.001). ANOVAs
+revealed that the condition has significant effect on the text and visualization credibility scores (p≤0.001 and p=0.022, correspondingly).
+A post hoc Tukey test showed that the text credibility scores in the
+Annotation and Linking conditions are significantly lower than that
+in the Static condition (p ≤0.001, d = -0.367; p =0.024, d = -0.321);
+the visualization credibility scores in the Annotation condition is
+significantly lower than that in the Static condition (p = 0.016, d =
+-0.261). No other significant differences were found.
+We further investigated the effects of the conditions under the
+three types of misinformation separately. The results are shown in
+Table 2. We found that Annotation significantly differs to Static on
+the text credibility scores of the stories with Contradictory Slant
+and Inverted Axis, and on the chart credibility score of the story
+with Inverted Axis. Besides, with Inverted Axis, Linking also had a
+marginal significant effect on the text credibility compared to Static.
+The above results show that Annotation and Linking can lower the
+perceived credibility of the data stories that contain misinformation.
+Worth mentioning, under all three conditions, the average text and
+visualization credibility scores across different misinformation lean
+to be positive (above 4). This result is consistent with Sec. 5.2.1,
+where most participants did not report any (valid) misinformation.
+5.2.2
+
+We are also interested in whether other factors like age, education,
+visualization literacy, attitudes, visualization usefulness and knowledge consistency will affect the perceived credibility. Hence, we
+computed Spearman’s rank correlations between these factors and
+the two credibility scores. The results have been shown in Fig. 7.
+We found little correlation between age, education, self-reported
+visualization literacy (“Vis. Familarity” in Fig.7), attitude and the
+credibility scores. These results are partially consistent with previous research [31, 45]. The exception is attitude, which was found
+having effects on perceived bias by Kong et al. [27]. We believe
+this may result from the differences of stories used the two studies,
+which is worthy future study.
+We found a positive correlation between the visualization usefulness and the two credibility scores, especially the visualization
+credibility score (p≤0.001). Understandably, the participants who
+thought the text and visualizations were less credible rated the visualization as less useful. However, it is surprising that the participants
+who found the visualization useful cannot find it less credible. A
+possible reason is that the power of the misleading text induces the
+participants to ignore the errors in the visualization. Besides, there
+is a weak positive correlation between the knowledge consistency
+and the credibility scores, consisting with previous research [24].
+5.3
+
+Why are Readers Misled?
+
+For participants who do not discover misinformation, we collected
+their subjective feedback on possible reasons and grouped them into
+seven categories using thematic analysis [4] (see Table 4).
+The most frequently mentioned reason is that their attention is
+not on elements related to misinformation (45.21%). For example,
+in the Obesity story with truncated axis, some participants ignored
+the numbers tagged on each bar: “I had not looked at the values for
+each of the bars at the initial viewing, as I was primarily focusing
+on the heights of the bars and comparing it to one another”. Also,
+
+Compare the two types of perceived credibility
+
+We compared the credibility scores of text and visualization using
+Wilcoxon signed-rank tests for each type of misinformation. Kong
+et al. [27] found that for visualizations with title-visualization misalignment, people consider the visualization to be more credible
+than the text. For contradictory slant, which was also used by Kong
+et al. [27], our results repeat their findings: The text credibility
+
+147
+
+

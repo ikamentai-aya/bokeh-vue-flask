@@ -1,0 +1,133 @@
+[9] Y. Chen, L. Wang, M. Dong, and J. Hua. Exemplar-based visualization
+of large document corpus. IEEE Transactions on Visualization and
+Computer Graphics, 15(6):1161–1168, 2009.
+[10] H. L. Chieu and Y. K. Lee. Query based event extraction along a
+timeline. In Proceedings of the 27th annual international ACM SIGIR
+conference on Research and development in information retrieval, pp.
+425–432, 2004.
+[11] C. Collins, G. Penn, and S. Carpendale. Bubble sets: Revealing set
+relations with isocontours over existing visualizations. IEEE Transactions on Visualization and Computer Graphics, 15(6):1009–1016,
+2009.
+[12] W. Cui, S. Liu, Z. Wu, and H. Wei. How hierarchical topics evolve in
+large text corpora. IEEE transactions on visualization and computer
+graphics, 20(12):2281–2290, 2014.
+[13] G. Da San Martino, S. Shaar, Y. Zhang, S. Yu, A. Barrón-Cedeño,
+and P. Nakov. Prta: A system to support the analysis of propaganda
+techniques in the news. In Proceedings of the 58th Annual Meeting of
+the Association for Computational Linguistics: System Demonstrations,
+pp. 287–293. Association for Computational Linguistics, Online, July
+2020. doi: 10.18653/v1/2020.acl-demos.32
+[14] S. DellaVigna and E. Kaplan. The fox news effect: Media bias and
+voting. The Quarterly Journal of Economics, 122(3):1187–1234, 2007.
+[15] N. Diakopoulos, D. Elgesem, A. Salway, A. Zhang, and K. Hofland.
+Compare clouds: Visualizing text corpora to compare media frames.
+In Proceedings of IUI Workshop on Visual Text Analytics, pp. 193–202,
+2015.
+[16] N. Diakopoulos, A. X. Zhang, and A. Salway. Visual analytics of media
+frames in online news and blogs. In Proc. IEEE InfoVis Workshop on
+Text Visualization, 2013.
+[17] W. Dou, X. Wang, R. Chang, and W. Ribarsky. Paralleltopics: A
+probabilistic approach to exploring document collections. In 2011
+IEEE Conference on Visual Analytics Science and Technology (VAST),
+pp. 231–240. IEEE, 2011.
+[18] W. Dou, X. Wang, D. Skau, W. Ribarsky, and M. X. Zhou. Leadline:
+Interactive visual analysis of text data through event identification and
+exploration. In 2012 IEEE Conference on Visual Analytics Science and
+Technology (VAST), pp. 93–102. IEEE, 2012.
+[19] N. Elmqvist and J. S. Yi. Patterns for visualization evaluation. Information Visualization, 14(3):250–269, 2015.
+[20] J. R. Finkel, T. Grenager, and C. Manning. Incorporating non-local
+information into information extraction systems by gibbs sampling.
+In Proceedings of the 43rd annual meeting on association for computational linguistics, pp. 363–370. Association for Computational
+Linguistics, 2005.
+[21] M. E. Fonteyn, B. Kuipers, and S. J. Grobe. A description of think aloud
+method and protocol analysis. Qualitative health research, 3(4):430–
+441, 1993.
+[22] C. Glynn, S. Herbst, M. Lindeman, and G. J. O’Keefe. Public Opinion.
+Routledge, 2015.
+[23] T. Groseclose and J. Milyo. A measure of media bias. The Quarterly
+Journal of Economics, 120(4):1191–1237, 2005.
+[24] F. Hamborg, K. Donnay, and B. Gipp. Automated identification of
+media bias in news articles: an interdisciplinary literature review. International Journal on Digital Libraries, 20(4):391–415, 2019.
+[25] E. Humprecht and F. Büchel. More of the same or marketplace of
+opinions? a cross-national comparison of diversity in online news
+reporting. The International Journal of Press/Politics, 18(4):436–461,
+2013.
+[26] M. Kim, K. Kang, D. Park, J. Choo, and N. Elmqvist. Topiclens:
+Efficient multi-level visual topic exploration of large-scale document
+collections. IEEE transactions on visualization and computer graphics,
+23(1):151–160, 2016.
+[27] J. B. Kruskal and M. Wish. Multidimensional scaling, vol. 11. Sage,
+1978.
+[28] K. Kucher, C. Paradis, and A. Kerren. The state of the art in sentiment
+visualization. In Computer Graphics Forum, vol. 37, pp. 71–96. Wiley
+Online Library, 2018.
+[29] H. Lee, J. Kihm, J. Choo, J. Stasko, and H. Park. ivisclustering: An
+interactive visual document clustering via topic modeling. In Computer
+graphics forum, vol. 31, pp. 1155–1164. Wiley Online Library, 2012.
+
+[30] Z. C. Lipton. The mythos of model interpretability. Queue, 16(3):31–
+57, 2018.
+[31] S. Liu, X. Wang, C. Collins, W. Dou, F. Ouyang, M. El-Assady,
+L. Jiang, and D. A. Keim. Bridging text visualization and mining:
+A task-driven survey. IEEE transactions on visualization and computer
+graphics, 25(7):2482–2504, 2018.
+[32] E. Loper and S. Bird. Nltk: The natural language toolkit. In In Proceedings of the ACL Workshop on Effective Tools and Methodologies for
+Teaching Natural Language Processing and Computational Linguistics.
+Philadelphia: Association for Computational Linguistics, 2002.
+[33] D. Luo, J. Yang, M. Krstajic, W. Ribarsky, and D. Keim. Eventriver:
+Visually exploring text collections with temporal references. IEEE
+transactions on visualization and computer graphics, 18(1):93–105,
+2010.
+[34] L. v. d. Maaten and G. Hinton. Visualizing data using t-sne. Journal of
+machine learning research, 9(Nov):2579–2605, 2008.
+[35] J. MacQueen et al. Some methods for classification and analysis of
+multivariate observations. In Proceedings of the fifth Berkeley symposium on mathematical statistics and probability, vol. 1, pp. 281–297.
+Oakland, CA, USA, 1967.
+[36] C. D. Manning, M. Surdeanu, J. Bauer, J. R. Finkel, S. Bethard, and
+D. McClosky. The stanford corenlp natural language processing toolkit.
+In Proceedings of 52nd annual meeting of the association for computational linguistics: system demonstrations, pp. 55–60, 2014.
+[37] L. McInnes, J. Healy, and J. Melville. Umap: Uniform manifold
+approximation and projection for dimension reduction. arXiv preprint
+arXiv:1802.03426, 2018.
+[38] S. M. Mohammad and P. D. Turney. Emotions evoked by common
+words and phrases: Using mechanical turk to create an emotion lexicon.
+In Proceedings of the NAACL HLT 2010 workshop on computational
+approaches to analysis and generation of emotion in text, pp. 26–34.
+Association for Computational Linguistics, 2010.
+[39] R. Plutchik. The nature of emotions: Human emotions have deep
+evolutionary roots, a fact that may explain their complexity and provide
+tools for clinical practice. American scientist, 89(4):344–350, 2001.
+[40] M. Pollard and J. Kavanagh. Profiles of News Consumption: Platform Choices, Perceptions of Reliability, and Partisanship. RAND
+Corporation, 2019.
+[41] J. Ramos et al. Using tf-idf to determine word relevance in document
+queries. In Proceedings of the first instructional conference on machine
+learning, vol. 242, pp. 133–142. Piscataway, NJ, 2003.
+[42] P. J. Rousseeuw. Silhouettes: a graphical aid to the interpretation and
+validation of cluster analysis. Journal of computational and applied
+mathematics, 20:53–65, 1987.
+[43] M. Sedlmair, M. Meyer, and T. Munzner. Design study methodology:
+Reflections from the trenches and the stacks. IEEE transactions on
+visualization and computer graphics, 18(12):2431–2440, 2012.
+[44] B. Shneiderman. The eyes have it: A task by data type taxonomy for
+information visualizations. In Proceedings 1996 IEEE symposium on
+visual languages, pp. 336–343. IEEE, 1996.
+[45] J. Stasko, C. Görg, and Z. Liu. Jigsaw: supporting investigative analysis
+through interactive visualization. Information visualization, 7(2):118–
+132, 2008.
+[46] R. Swan and D. Jensen. Timemines: Constructing timelines with
+statistical models of word usage. In KDD-2000 Workshop on Text
+Mining, pp. 73–80. Citeseer, 2000.
+[47] A. Thompson. All the news: 143,000 articles from 15 American publications. https://www.kaggle.com/snapcrack/all-the-news,
+2017.
+[48] S. Tilkov and S. Vinoski. Node.js: Using javascript to build highperformance network programs. IEEE Internet Computing, 14(6):80–
+83, 2010.
+[49] K. Wongsuphasawat, D. Smilkov, J. Wexler, J. Wilson, D. Mane,
+D. Fritz, D. Krishnan, F. B. Viégas, and M. Wattenberg. Visualizing
+dataflow graphs of deep learning models in tensorflow. IEEE transactions on visualization and computer graphics, 24(1):1–12, 2017.
+[50] C. C. Yang, X. Shi, and C.-P. Wei. Discovering event evolution
+graphs from news corpora. IEEE Transactions on Systems, Man, and
+Cybernetics-Part A: Systems and Humans, 39(4):850–863, 2009.
+
+140
+
+

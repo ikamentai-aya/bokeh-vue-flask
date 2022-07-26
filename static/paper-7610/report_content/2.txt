@@ -1,0 +1,169 @@
+X
+
+Y
+
+Z
+
+X
+
+Y
+
+Z
+
+X
+
+Y
+
+Z
+
+20
+
+S111
+S121
+S211
+S221
+
+10
+
+S112
+
+40
+
+x1
+
+x2
+
+y1
+
+z1
+
+y2
+
+z2
+
+0
+
+(a)
+
+x1
+
+x2
+
+(b)
+
+y1
+
+z1
+
+y2
+
+z2
+
+S122
+S212
+S222
+
+(c)
+
+Figure 2: Parallel Coordinates visualizations with (a) numerical attributes and (b) categorical attributes. (c) A Parallel Sets visualization.
+
+1.2 Parallel Sets
+The Parallel Sets visualization is especially designed for categorical
+data. Instead of showing individual data points, a Parallel Sets visualization reveals data frequencies by drawing parallelograms between
+pairs of categories (Figure 2(c)). The width of the parallelogram is
+relative to the number of data records that share those categories.
+This idea gives rise to the notion of sets. For example, let (x1 , x2 ),
+(y1 , y2 ) and (z1 , z2 ) be the categories for the attributes X,Y, Z we
+considered earlier. Then for each i, j, k, where 1 ≤ i, j, k ≤ 2, a Parallel Sets visualization forms a set Si jk by collecting the data records
+that belong to all three categories xi , y j and zk . Assume that the
+axis X,Y, Z are horizontally aligned. Then the set Si jk is represented
+using two parallelograms: one corresponding to Si j and the other to
+S jk . Here Si j is a predecessor of S jk . We refer to such a sequence
+of contiguous parallelograms as a ribbon. Based on the context,
+sometimes a pair of ribbons may be interpreted as one ribbon being
+partitioned into two ribbons. For example, in Figure 2(c), the two
+ribbons corresponding to S221 and S222 may be interpreted as the
+ribbon Sx2 y2 being partitioned into ribbons Sy2 z1 and Sy2 z2 .
+If the attributes are numeric, then a Parallel Sets visualization can
+be designed by transforming each numeric attribute into a categorical
+attribute, where the categories are defined as value ranges [27]. For
+example, the numeric attribute body weight can be transformed into
+categories: Underweight, Healthy weight, Overweight and Obese.
+To explore mixed data, which may contain numerical, categorical
+and even spatiotemporal attributes, a common approach is to use
+information linked multiple views, where different visualizations of
+a dataset are visualized across different views simultaneously and
+interactions (selection or filtering) in one view is reflected across
+multiple views. However, an ill-designed visualization may significantly increase users’ cognitive load, and mislead users showing
+ambiguous or unclear information.
+
+In a discussion with the researchers, we realized that for a scientific analysis one often needs to go through various data processing
+and visualization steps, e.g., the capability of selecting variables,
+dissecting datasets, filtering based on temporal ranges, visualizing statistics such as quantiles or boxplots, and plotting data on a
+map, etc. This motivated us to investigate different ways to design
+multiple-linked views that would help gain quick insights into such
+mixed data.
+To explore a meteorological dataset, a widespread approach is
+to visualize a topographic map where a selection on the map generates a Parallel Coordinates visualization of the selected data in a
+secondary view. While investigating whether such a Parallel Set and
+map combination could be adopted to aid in visualizing such mixed
+data, we realized that a Parallel Sets visualization are more suitable
+in this context as it allows users to select various sets or combinations on the fly, and creates an opportunity to augment statistical
+plots on rows when the months are placed as the last vertical axis
+(e.g., see Figure 1). Although the discovery of S ET-S TAT-M AP was
+inspired by the analytics of meteorological dataset, we soon realized
+that similar scenarios may appear in many other real-life context.
+For example, consider a scenario where a policymaker is exploring
+a vacation rental database to examine the distributions of room price
+(numeric) and room type (categorical) across different neighbourhoods (spatial), and understand potential interactions among these
+attributes [20].
+1.4
+
+Contribution
+
+We propose S ET-S TAT-M AP that extends Parallel Sets to visualize
+mixed data, i.e., the data points may contain categorical attributes,
+numerical attributes and possibly spatial information.
+S ET-S TAT-M AP combines the idea of Parallel Sets, statistical
+columns and multiple coordinated view techniques. The Parallel
+Sets view displays the data records by grouping them into sets or
+ribbons, which provides information about the relationships among
+data attributes and the number of data records in each set. We design
+the Parallel Sets visualization to link the sets determined by the last
+axis with the rows of the statistics columns. Each row of the statistics
+columns provide statistical summaries of the numeric attributes for
+each category of the last axis of the Parallel Set. By selecting a row
+of the statistics columns, one can examine the data records on the
+map view. The interactive features (set selection, transformation
+of numeric attributes into categorical ranges, axis reordering, color
+and texture selection, filtering based on rectangle selection on maps)
+allow users to explore the dataset by generating visual configurations
+that best suit their needs.
+We propose two enhancements for the Parallel Sets view. The
+original Parallel Sets visualization only uses colors for ribbons to
+help users quickly distinguish categories in the first axis. Our first
+enhancement adds textures relating to the second-axis categories
+to help users further analyse a pair of attribute combinations. Our
+second enhancement to the Parallel Sets view is merging unim-
+
+1.3 Background and Motivation
+In an Open Science Meeting of the Global Water Futures, we were
+intrigued by observing how scientists analyze various environmental
+variables through side-by-side contour-plots of the map to understand their yearly pattern and spatial correlations. The number of
+combinations that needs to be analyzed can become very large fairly
+easily, e.g., consider analyzing pairwise relations among different
+variables in different seasons in different spatial locations. This
+restricts the ability of researchers to gain quick insights into the
+data. Such a large number of combinations does not readily allow
+an efficient way to visualize all the information in multiple linked
+views. For a specific example, consider a hydrologist examining
+an evapotranspiration process (evaporation from water and soil and
+transpiration from plants), which is influenced by a combination
+of solar radiation, air temperature, wind speed and humidity. The
+hydrologist also needs to examine the annual trends of these weather
+parameters across different geographic landscapes: mountainous,
+forest, urban, and rural areas.
+
+152
+
+

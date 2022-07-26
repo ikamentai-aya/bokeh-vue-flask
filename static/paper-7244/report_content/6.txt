@@ -1,0 +1,125 @@
+News Kaleidoscope supports scalable analysis of news events.
+An immediate recognized benefit, noted by all participants, was that
+News Kaleidoscope quickly allows them to see and analyze a large
+number of stories about a news event: “The fact that there are so
+many articles and site at the same place makes it useful already”
+(e1). “The system would be a good place to start for journalists
+because we deal with a lot of news articles and it would definitely
+be easier if such a system would be used” (e2). “Overall I would
+use this system to start with a big dataset analysis because it seems
+really good for that” (e5). “This system would definitely be a great
+place to start. So many articles and news sites in one place. I find
+this system really comprehensive” (e3).
+Multiple participants quickly realized that articles could be ingested at by reviewing keywords instead of reading the entire text:
+“Visualizing keywords and entities like this is really great. I don’t
+have to read the entire article at all” (e4). “The keywords and entities are a good thing in the system, it very nicely shows me which
+article is similar and which is it different from” (e1).
+Several participants mentioned that News Kaleidoscope showed
+coverage diversity through the lens of polarity between news sites
+and over time. “Bias isn’t explicitly shown, but as a user walks
+through or uses the system more I think it would be easier to see
+polarities using the emotion panel . . . the system gives me a very
+good idea of coverage” (e1). “This would help me a lot in the kind
+of work I am doing. I work on the usage of words in a news article
+to then find the underlying polarity . . . this system would be just apt
+for it” (e4).
+The visual analytics were a novel experience. While one participant (e6) had previous experience using LDA [7], no participants
+had used a visual analytics system similar to this as a part of their
+own work or research. “I have never used such a system before, I
+have done topic modeling, but this is interesting and new” (e6). “I
+think just the fact that so many features and site comparison exists
+in the system makes it interesting because we generally don’t have
+anything like this to use” (e2). “I really like the emotions panel. It’s
+a very new take and it shows me a broad spectrum over time, which
+is really informative for me and my research” (e5).
+An unexpected usage of News Kaleidoscope as a validation
+system. While data exploration and discovery are common visualization goals, empirical validation—such as of a hypothesis or
+model’s performance—is also a function that visualization can support. Since news experts had existing knowledge and intuitions of
+coverage diversity (as well as the potential biases of news sites),
+several participants felt the system could be used as a verification
+tool. “Since I already know the bias or the kind of articles sites
+publish, I might use this system to compare them and validate my
+understanding” (e2). Interestingly, e7 mentioned using the system
+as a way to review news articles that she helps create: “We can use
+it to understand what’s going on: model a [news] outlet. It might be
+helpful for comparison. How are we doing in presenting news? Are
+we similar to CNN or NPR?”
+Targeted suggestions by news experts. While participants
+could understand the visualizations and interactions, some took
+a bit of time to acclimate to the workflow and the system’s available
+functionalities. “Adding a few breadcrumbs might help, because they
+are so many things going on here” (e5). Likewise, as non-engineers,
+participants were sometimes unsure of the backend algorithms. For
+example, clustering was positively reviewed, but several participants (e1, e2, e4, e5) suggested adding some form of explanation as
+to how the metrics were computed; e.g., why the specific number
+of clusters was chosen: “A little extra support for people with no
+CS background would help, because its a very new thing for me”
+(e4). “A lot of non-computer scientist people might find it a little
+overwhelming” (e3). Another feature that was requested multiple
+times was summary and comparative views, to show aggregate event
+behavior and site-level comparisons: “‘I preferred more overview
+
+has high Breitbart representation, shows joy as a dominant emotion
+(with keywords such as victory, friend, and God). (i) Hovering on
+individual articles further demonstrates this: Atlantic articles tend to
+have a higher amount of words associated with emotions like anger
+and fear.
+Gary has now confirmed both that coverage diversity exists in
+how The Atlantic and Brietbart have covered this event, and he has
+learned how the polarity has manifested in terms of emotional biases
+and keywords. The Atlantic has tended towards coverage that evokes
+anger and fear in the context of Trump’s win, while Brietbart shows
+joy regarding Hillary Clinton’s loss.
+6 E VALUATION
+To empirically evaluate News Kaleidoscope, we conducted a trio
+of user studies. Study #1 consists of pair analytics sessions with
+7 news experts (e1–e7), who are the target demographic for the
+system. However, to understand if and how News Kaleidoscope
+can generalize to a broader population, we subsequently conducted
+a follow-up study with 11 news novices (p1–p11). In contrast to
+Study #1, we format Study #2 as a controlled usability study to
+understand not only the insights supported by News Kaleidoscope,
+but also the overall user experience for users with little background
+domain knowledge.
+These two studies provided robust insights into how News Kaleidoscope supports analysis of news events and coverage diversity,
+but they also highlighted several system features that were either
+missing or were difficult to understand. After adding a targeted set
+of new system features based on this feedback, we conducted a third
+study to validate their utility (Study #3).
+6.1 Study #1 Design
+For Study #1, we conducted pair analytics sessions with 7 news
+experts. Specifically, we wanted to understand what specific types
+of insights about coverage diversity were supported by News Kaleidoscope. Pair analytics [6,19] is a procedure for capturing reasoning
+processes in visual analytics. A visualization expert well-versed
+with an interface’s functionality “drives,” while the study participant reasons and makes decisions based on their domain expertise.
+Verbal discussion between the driver and participant is the basis for
+understanding of the participant’s sensemaking process as well as
+what specific insights are uncovered during investigation.
+Study Procedure. Study sessions were conducted remotely using
+Zoom videoconferencing software. Kaleidoscope’s browser window
+was shared via Zoom’s sharing feature from the visualization driver’s
+computer to the remote participant. QuickTime Player recorded
+audio discussion and screen capture.
+For each session, the visualization expert first gave an overview
+of the system’s functionality until the participant felt confident to
+proceed. After this, the news expert could freely analyze and explore the system using the entirety of the All the News text corpus.
+Sessions lasted as long as the news expert desired, though it was
+suggested they spend at least 15 minutes in their investigation. At
+the end of each session, participants were asked to provide freeform
+commentary and feedback on the system, such as what features they
+liked, disliked, and found useful.
+Participants. The 7 participants in Study #1 were professors
+at Arizona State University in the political science and journalism
+departments (5 assistant and 2 associate professors). All participants
+were highly knowledgeable about American news reporting, including coverage diversity and perceived biases of news sites; a couple of
+the faculty specifically researched media bias and coverage diversity
+in reporting.
+6.2 Study #1 Results
+To understand how News Kaleidoscope promotes insights to news
+experts, we reviewed the discussions from recorded screencasts.
+We report here the usage patterns and the insight themes that were
+promoted.
+
+136
+
+

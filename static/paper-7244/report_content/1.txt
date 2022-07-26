@@ -1,0 +1,81 @@
+2022 IEEE 15th Pacific Visualization Symposium (PacificVis)
+
+News Kaleidoscope: Visual Investigation of Coverage Diversity in News
+Event Reporting
+Aditi Mishra*
+
+Shashank Ginjpalli†
+
+Chris Bryan‡
+
+Arizona State University
+
+Figure 1: News Kaleidoscope supports visual analysis of discrete news events with a focus on how coverage of an event varies. (a)
+After searching for news articles about an event of interest, (b) an overview ordination plot shows the retrieved articles. (c) A site
+level view and annotations for rendered clusters is also displayed. (d) Selecting a subset of articles (e) populates subselection views,
+enabling further investigation of coverage diversity. (f) Individual articles can also be inspected for detailed review.
+
+A BSTRACT
+
+Index Terms: Human-centered computing—Visualization—Visualization techniques—Treemaps; Human-centered computing—
+Visualization—Visualization design and evaluation methods
+
+When a newsworthy event occurs, media articles that report on
+the event can vary widely—a concept known as coverage diversity.
+To help investigate coverage diversity in event reporting, we develop a visual analytics system called News Kaleidoscope. News
+Kaleidoscope combines several backend language processing techniques with a coordinated visualization interface. Notably, News
+Kaleidoscope is tailored for visualization non-experts, and adopts
+an analytic workflow based around subselection analysis, whereby
+second-level features of articles are extracted to provide a more
+detailed and nuanced analysis of coverage diversity. To robustly
+evaluate News Kaleidoscope, we conduct a trio of user studies. (1)
+A study with news experts assesses the insights promoted for our
+targeted journalism-savvy users. (2) A follow-up study with news
+novices assesses the overall system and the specific insights promoted for journalism-agnostic users. (3) Based on identified system
+limitations in these two studies, we refine News Kaleidoscope’s
+design and conduct a third study to validate these improvements.
+Results indicate that, for both news novice and experts, News Kaleidoscope supports an effective, task-driven workflow for analyzing
+the diversity of news coverage about events, though journalism
+expertise has a significant influence on the user’s insights and takeaways. Our insights developing and evaluating News Kaleidoscope
+can aid future tools that combine visualization with natural language
+processing to analyze coverage diversity in news event reporting.
+
+1
+
+In today’s digital society, the ways that people access news is
+rapidly changing. Consumption on traditional platforms (print, radio, and television) is falling as consumption via websites and apps
+increases [1]. In addition to legacy news organizations adopting
+online presences, new digital-native “born on the web” publishers
+are utilizing social media platforms such as Facebook, Twitter, and
+YouTube for outreach, engagement, and sharing of stories [1].
+A corollary to this increasing media pluralism is that, when a
+newsworthy event occur, articles reporting on the event will vary
+in different ways—a concept we refer to as coverage diversity [25].
+While coverage diversity can include structural aspects—e.g. the
+language a news article is written in and its length—it also includes
+thematic and framing aspects such as media bias. Systematic analyses have identified multiple types of media bias. For example,
+AllSides, a media watchdog group, classifies media bias into eleven
+categories, including the use of spin words, flawed logic, sensationalism/emotionalism, and ad hominem attacks [4].
+Our research aim is, given a news event of interest, to support the
+visual analysis the coverage diversity of news articles that report on it.
+Specifically, we consider coverage diversity in terms of the keywords
+and entities employed in reporting and their potential emotional
+biases, which are classified as emotionalism/sensationalism types
+of media bias [4]. We employ a design study methodology [43] to
+develop and evaluate a novel visual analytics platform, called News
+Kaleidoscope, which combines interactive visualizations and natural
+language processing (NLP) techniques to analyze coverage diversity.
+News Kaleidoscope is designed based on a pre-study with jour-
+
+* e-mail: amishr45@asu.edu
+† e-mail:sginjpal@asu.edu
+‡ e-mail:cbryan16@asu.edu
+
+2165-8773/22/$31.00 ©2022 IEEE
+DOI 10.1109/PacificVis53943.2022.00022
+
+I NTRODUCTION
+
+131
+
+

@@ -1,0 +1,114 @@
+. . . [Start by showing] just showing one cluster first and then the
+user digs in deeper” (e5). “I wished it directly showed me the sites’
+differences or similarities” (e3).
+6.3
+
+Study #2 Design
+
+Study #1 provided understanding into how News Kaleidoscope can
+be used by domain experts to analyze coverage diversity. However,
+during development we also wondered if such a system can benefit
+news novices—users that are largely agnostic about the coverage
+diversity of specific news sites. As a motivation for this, a recent
+RAND report indicates that people are increasingly searching for “alternative views” about newsworthy events of interest [40]. Therefore,
+we conducted a second study targeting these news novice users.
+In contrast to Study #1, and to better regulate the user experience
+and understand the thought process of news novices, Study #2 was
+run as a full qualitative study that included both in-study thinkaloud protocol and a post-study questionnaire and feedback session
+about the user experience This allows us to understand both how
+the insights of novice users compare and contrast to domain experts,
+and also to understand the overall system experience for a set of
+domain-agnostic users.
+To begin Study #2, participants first completed a survey to collect
+demographic information and background knowledge. After this,
+the following three stages were run:
+Training Stage. Each participant was given a hands-on tutorial
+describing all features and interactions in News Kaleidoscope. Participants could then practice with the system for as long as desired,
+analyzing news events in the All the News corpus that occurred in
+January 2017. A list of four noteworthy events was provided to the
+participant as a reference point. The intent was for the participant
+to become comfortable using the interface before proceeding to the
+main study.
+Exploration Stage. Next, each participant was free to explore
+the news corpus using News Kaleidoscope for as long as they desired. It was suggested that participants spend at least 15 minutes
+using the system, however there was no hard cutoff. To constrain the
+study design, we restricted article queries to news events that happened in the latter half of 2016 (approximately 62,700 total articles).
+Participants were instructed to start by exploring and analyzing the
+coverage of two significant news events from that year: (1) The
+2016 presidential election on November 8. (2) The Pulse Nightclub
+shooting in Orlando, Florida on June 12. After, participants were
+free to explore and analyze any news events they wanted. A list of
+noteworthy news events (with associated keywords) was provided
+for reference, though participants could query and use the system
+however they desired. During this stage, participants used think
+aloud protocol to verbalize their thought processes and actions [21].
+Review Stage. Finally, participants completed a short survey
+questionnaire about system impressions and functionality using a
+Likert scale (1 – strongly disagree, 7 – strongly agree). Participants
+then had the opportunity to provide freeform comments, suggestions,
+and criticisms about the interface and their experience.
+Participant Recruitment and Apparatus. We recruited 11 nondomestic engineering students from <Anonymous University>:
+age µ = 24.27 years (σ = 1.95), 7 males and 4 females, most of
+whom (8/11) had only moved to the United States after 2016. All
+participants were proficient in English and had good (corrected if
+necessary) eyesight. News Kaleidoscope was displayed in Google
+Chrome on a 24-inch monitor (3840 × 2160 resolution) with keyboard and mouse and connected to a MacBook Pro running macOS
+Mojave. QuickTime Player recorded session screencasts and audio.
+To determine if Study #2 participants could be considered news
+novices, we included a pre-screening as a part of the background
+knowledge collection. As all participants were non-domenstic students, this included asking several questions about American news
+reporting. While many participants reported some familiarity with
+American news companies based on a 7-point Likert scale (µ = 4.58,
+
+Figure 4: Before taking Study #2, novice news participants were
+asked to rate the perceived political biases of the news sites in the
+study’s data corpus. The histograms show the overall ratings for each
+site; gray circles indicate the number of participants who simply said
+“I don’t know.” This figure illustrates that Study #1 participants were
+largely unfamiliar with American news sites, and could therefore be
+considered novice news users. As a reference, the rightmost column
+shows each site’s media bias rating from AllSides [2].
+
+σ = 1.53) and 8/11 participants agreed that they regularly kept up
+with American news stories, when we asked participants questions
+about specific news sites they were largely oblivious about how to
+rate news sites. Figure 4 shows this explicitly; the high variance in
+the historgrams indicate uncertainty, and the gray circles to the right
+indicates the number of participants who simply answered “I don’t
+know” about a particular site. The labels in the right-most column
+indicate the site’s AllSides media watchdog rating, which likely
+represents the consensus rating for news experts. While bias is not a
+perfect proxy for the coverage diversity analysis that News Kaleidoscope supports, this chart effectively illustrates that the Study #2
+participants were largely unfamiliar with the American news sites in
+our data corpus, and could therefore be considered news novices for
+the purposes of the study.
+6.4
+
+Study #2 Results
+
+To analyze Study #2, we first briefly report high-level system ratings
+based on post-study questionnaire responses, and then analyze participant comments (collected both from think-aloud comments and
+post-study feedback) to qualitatively assess the types of insights and
+action patterns that News Kaleidoscope promotes for novice users.
+6.4.1
+
+System Ratings via Questionnaire Responses
+
+Figure 5 shows questionnaire responses about News Kaleidoscope
+which describe overall system feedback and the perceived usefulness
+of its interface features. Overall system ratings (Q1–Q11) were
+generally positive, including that it was easy to learn, use, and
+comprehend (Q1–Q3), organized data into a high-level overview
+(Q5), supported meaningful analysis (Q6–Q9), and encouraged
+participants to think about coverage diversity in news reporting
+(Q10–Q11).
+Responses about specific interfaces features (Q12–Q25) followed
+a similar trend in being generally well regarded. However, reviewing
+these responses individually indicates at least some features were
+not as well received, notably the word cloud in the NER panel
+(Q21–Q22) and the action of changing the number of clusters in
+the emotions panel (Q24).
+
+137
+
+

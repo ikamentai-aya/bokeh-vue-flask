@@ -1,0 +1,106 @@
+Figure 12: Performances of S ET-S TAT-M AP as the number of variables increase from 2 to 4. For i variables, where i ∈ {2, 3, 4}, the Parallel Sets
+view contains (i + 1) axes (i axes for variables and the last axis for Month).
+
+of great interest for hydrologists and for climate change research.
+(b) The spatial resolution of the data is coarse (36 km) which is
+a challenge in understanding changes and shifts in variables over
+farms or urbanized areas.
+We asked the experts about what tools they generally use to visualize geo-analysis results and how S ET-S TAT-M AP would compare
+to them. They mentioned that a typical output involves a single
+variable color-coded map, generated in Python or R, that can be also
+overlaid on a static or dynamic Google Maps. Generally, a couple
+of such maps, from different periods of time with the same variable
+or different variables from the same period of time, are compared
+side by side for decision making. In comparison, S ET-S TAT-M AP is
+capable of showing more than one variable in one geographic location at once making the relations among variables more detectable.
+The experts were enthusiastic about the prospect of S ET-S TAT-M AP
+and using it as a tool to display various standardized hydro-climate
+indices at once. These indices are built over long-term hydrological variables and traditionally, they are more indicative of drought
+and pluvial conditions [33]. Therefore, for future work, the experts
+wanted to extend our focus on using S ET-S TAT-M AP to present and
+compare the long-term indices, such as Standardized Precipitation
+Index (SPI) and Soil Moisture Deficit Index (SMDI), on one map.
+Another opportunity is to integrate S ET-S TAT-M AP with existing
+hydrological models so that one can validate the models’ prediction
+outputs against observed data.
+
+expected, but the number of bedrooms varies widely for the entire
+place option. He then attempted to examine the median price over
+various division of the city. Therefore, he reordered the axis to set
+the city division to be the last axis (Figure 10), and then sorted the
+price column in descending order.
+He noticed that the listings in the Calgary center and southern
+part had the higher median price, compared to the northern part
+of Calgary. He then examined the composition of room types in
+the Calgary center. By examining the color and texture, he found
+that about two-third of the listings are offering the entire place and
+among those listings the 1 and 2 bedroom types are almost equally
+frequent. To examine the dataset further the participant added the
+neighborhood, and found that a large number of neighborhoods are
+merged together. To find most affordable listings he sorted the price
+column in ascending order (Figure 11) and found the neighborhoods
+(Shawnessy, Crans, Arbour Lake, etc.) with low price listings. By
+examining the texture, he noticed that these places are far away from
+the Calgary center.
+6
+
+S CALABILITY OF S ET-S TAT-M AP
+
+To test the limit of S ET-S TAT-M AP we analyzed its performance
+with the meteorological dataset [6] on an Intel i5-1135G7 machine
+with 16GB RAM, where the visualization was loaded with MS Edge
+97.0.1072.55 on a 4K monitor. Figure 12 illustrates the performances
+of S ET-S TAT-M AP as the number of axes increases. The terms
+Quartile and Uniform correspond to the cases when the variables
+have been categorized based on quartile (e.g., Figure 3(top)) and
+equal value ranges (e.g., Figure 3(bottom)), respectively. Figure 12
+shows that both the number of polygons rendered in the Parallel
+Sets view to draw the ribbons (and hence the rendering time), and
+the number of pairwise ribbon crossings increase drastically for five
+axes (4 variable axes and the Month axis). The rendering of statistics
+column takes negligible time (approx. 3% of total time) compared
+to the Parallel Sets rendering. The Parallel Sets view with Uniform
+categorization appears to be much more scalable than the Quartile
+based categorization.
+An increased number of axes increases the pairwise ribbon crossings, and affects the readability of the visualization. Here the interval
+selection (Section 3.4) and opacity controls (Figure 9) come into
+play. As illustrated in Figure 7, the user can select an interval to
+highlight the ribbons passing through that interval to deal with overplotting. However, the overplotting problem remains if one desires
+to create a static picture or inforgraphics.
+
+5.4 Online Vacation Rental Dataset (Airbnb)
+While S ET-S TAT-M AP was useful to reason about meteorological
+datasets, here we show a potential use case to demonstrate its use in
+an entirely different setting.
+Dataset description: In this use case we examine an Airbnb
+dataset, which is an online vacation rental dataset. We use a dataset
+for listings over Calgary [1, 5], which contained 2521 listings from
+Dec 12, 2019. The final processed data contained many categorical
+and numeric attributes, e.g., room type, longitude, latitude, bedrooms, administrative division, neighborhood, overall satisfaction,
+price, etc. Since this dataset contains both categorical and numerical
+data, it provides a good opportunity to demonstrate the functionality
+of S ET-S TAT-M AP in handling mixed data.
+Workflow: In this case the dataset was explored by a PhD student,
+who was familiar with both Parallel Coordinate and Parallel Sets
+visualization. He was interested in examining the Airbnb listings to
+better understand how the rental listing types and price vary across
+various divisions of the city.
+He selected the attributes room type (shared, private room, or
+entire place), city division (borough), and bedrooms (number of
+rooms) to be visualized in the Parallel Sets view. Then he selected
+ratings and price attributes to be visualized in the statistics column.
+He first observed that there are only a few shared accommodation
+options compared to the private room or entire place option. He also
+noticed that private room always comes with a single bedroom as
+
+7
+
+D ISCUSSION AND F UTURE W ORK
+
+From our experience, we have seen S ET-S TAT-M AP to perform very
+well if both the number of axes (variables) and the number of intervals (categories) per variable are bounded by 5. For an axis to
+be useful, it needs to have at least two intervals, each corresponding to a reasonable number of data records. Since the ribbons are
+
+158
+
+

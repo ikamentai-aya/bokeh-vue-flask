@@ -1,0 +1,42 @@
+Figure 9: Comparing two different regions in a split view where the month September is selected in both views. The gray attribute in the Max Temp
+category at the bottom map denotes that, there exist a high temperature region in the selected area that falls outside of any temperature range
+shown on the top view.
+
+Figure 10: Exploration of Airbnb dataset where the city division attribute is chosen as the last axis of the Parallel Sets.
+
+Figure 11: Exploration of Airbnb dataset where the neighborhood
+attribute is chosen as the last axis of the Parallel Sets.
+
+The experts selected the min temp, precipitation, and wind. Since
+the order of the variables in this study matters, they focused on the
+first two variables selected (i.e. min temp and precipitation). They
+chose the quartiles view as this is more common in hydrology to
+look at the highest and lowest quartiles. Looking at the Parallel Sets,
+they could immediately view that the lowest and highest quartiles
+of min temp are related to lower and higher amount of precipitation,
+respectively. They could also tell that higher min temp that corresponds with warmer months are associated with less wind. While
+colder months are expected to be with stronger wind gusts.
+The texture showed more precipitation is associated with less
+windy scenarios and warmer months. The bar plot showed the
+monthly distribution of each selected variable. Precipitation is generally higher in the month of July but its daily values are with the
+highest variability. The average monthly wind gust and its daily variability in the months of January and November also are the highest.
+
+The background of the bar plots in each column was identical and
+showed the distribution of the first selected variable, in this case, min
+temp with blue being the lower quantile or dark blue being the most
+dominant color in January and December and dark brown being the
+highest minimum temperature in the summer months and September.
+Finally, the Google overlay map showed the spatial distribution of
+the min temperature in color and precipitation in texture for a given
+month. They selected the month January and noticed that for 2013,
+Southern Manitoba, east, and north Saskatchewan experienced lower
+temperatures than the south Saskatchewan and Alberta.
+The experts mentioned that the series of visualization provided
+by the system can be valuable for comparing key hydroclimatic variables. The also mentioned that the system, however, has its spatial
+and temporal limitations: (a) The data here is only collected for the
+year 2013, which makes it difficult to have meaningful comparisons
+with other years, comparing trends, and changes, which would be
+
+157
+
+

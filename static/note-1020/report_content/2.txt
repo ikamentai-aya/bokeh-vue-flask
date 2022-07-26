@@ -1,0 +1,130 @@
+(A) Natural Language Form
+
+corpora influences the performance of the NMT model, refining
+poor-quality(noisy) parallel corpora plays a critical role in improving the model quality itself. Therefore, improving the quality of the
+NMT model by detecting and removing noisy pairs in the parallel
+corpora has recently been an important ongoing research topic [12].
+Various methods have been utilized to improve the quality of
+corpora. Users can manually investigate and detect noisy parallel
+corpora by inspecting each sentence pair within the corpora one-byone. However, manual inspection is time-consuming, laborious, and
+also becomes more challenging without the linguistic background
+of the data. Rule-based automatic filtering techniques were also
+proposed, which utilized general properties of sentences such as
+length and word counts difference [11]. There are also model-based
+automatic filtering tools that exploit the semantic information (e.g.,
+cosine similarity) of corpora [21]. However, these automatic approaches suffer from misclassification (e.g., a high quality sentence
+pair can be incorrectly classified as noise) [1]; Moreover, as there
+are diverse types of noisy parallel corpora [9], fully automated approaches may not be robust enough to deal with all types of noisy
+parallel corpora.
+To alleviate this limitation, we present VANT, a visual analytics
+system for interactively refining parallel corpora in Neural Machine
+Translation. Our system enables users to readily understand the
+overall status of large parallel corpora. Users can efficiently identify
+noise candidates based on derived metrics to evaluate the quality
+of parallel corpora. By first focusing on the candidates, users can
+more effectively examine actual noisy parallel corpora and analyze
+the noise patterns with our visual encoding. We have demonstrated
+the usefulness and the effectiveness of our system by conducting a
+qualitative user study with eight participants including four domain
+experts who work at a major IT company.
+2
+
+Length Ratio, Token Length Ratio
+
+Source corpus
+
+Target corpus
+Translation
+
+Back-translated
+target corpus
+
+(B) Vector Form
+
+Back-translated
+source corpus
+Universal Sentence Encoder
+Cosine Sim.
+
+Source corpus
+Cosine Sim., BLUE, METEOR
+
+Back-translated
+target corpus
+
+Target corpus
+Cosine Sim., BLUE, METEOR
+
+Back-translated
+source corpus
+
+Figure 2: Illustration of the data preprocessing for VANT (Section 4).
+We used both the natural language form and the vector form of each
+corpus to widen the range of applied metrics.
+
+3
+
+D ESIGN R EQUIREMENTS
+
+We conducted a preliminary interview with two engineers who have
+more than eight years of career in NMT. During the interview, we
+mainly discussed about (1) the necessity of detecting noisy sentence
+pairs and refining parallel corpora, and (2) difficulties in data filtering
+process. In the interview with the experts, we were able to learn current practices and difficulties in the corpora refinement task. Based
+on the interview results, we established four design requirements.
+• DR1: Provide a scalable overview of the quality of NMT data.
+It requires too much effort for users to identify low quality sentence pairs from large parallel corpora for training NMT model.
+Thus, the system should show the distribution of metrics scores so
+that users can readily understand the overall quality of parallel corpora and find noise candidates, a subset of the corpora consisting
+of sentence pairs that can potentially become real noise.
+
+R ELATED W ORKS
+
+Automatic Refinement of Parallel Corpora Early works for automatic refinement of parallel corpora were based on the general
+properties of a sentence.
+For example, Moses [11] filter sentence pairs based on the length
+differences between source and target sentences. Since semantic
+information is not utilized in these conventional approaches, several
+model-based filtering methods have been further presented. For instance, Xu et al. [20] and Zhang et al. [21] first convert target and
+source sentences into embedding vectors using a pretrained model,
+and filters corpora based on a similarity metrics such as cosine similarity between the vectors. However, automatic approaches can still
+suffer from misclassification issues [1]. VANT migrates such issues
+by providing an interactive visual analytics system to examine and
+refine parallel corpora; our system overcomes automatic approaches
+by combining it with a manual process, thus enables more accurate
+refinement.
+
+• DR2: Recommend noise candidates using multi-metric rankings with user-adjustable weights. Each metric represents the
+quality of the parallel corpora from only a single perspective. For
+more comprehensive refinements, users need to consider several
+different metrics to find noise candidates from more diverse perspectives. Therefore, the system should provide several metrics
+and allow users to interactively adjust the weight of each metric to
+compute combined metric scores for sorting the noise candidates
+so that users can further examine the noise candidates from more
+diverse perspectives of their interest.
+• DR3: Enable users with low literacy to inspect the noisy corpora. It is challenging to evaluate the correctness of the translation through the natural language form of source and target
+sentences if users are not fluent in both languages. The system
+should allow users to inspect parallel corpora in the natural language form so that they can determine noise without linguistic
+background.
+
+Visual analytics for NMT Most visual analytics systems for NMT
+are developed for model explanation. For example, Data2Vis [6] provided interactive visualizations to understand Sequence-to-Sequence
+languages models. Some researches focused on visualizing attention scores [18] for detailed explanation of the translation process.
+Munz et al. [13] proposed a visual analytics system to help users
+correct erroneous translations by examining the translation result of
+monolingual data provided by NMT model.
+However, while such visual analytics systems for a NMT model
+have been proposed, a system for parallel corpora is not yet introduced. Although interactive data wrangling tools with mixedinitiative interfaces can be used to clean up noisy raw data in general [8], they are not suitable for dealing with parallel corpora. Our
+work aims to fill such gaps by introducing an interactive visual analytics system specialized in examining and refining parallel corpora.
+
+• DR4: Support pattern analysis of noisy parallel corpora. Since
+noisy parallel corpora can exist in various forms, it is important
+for users to analyze the information of items which are previously
+identified for finding more noisy candidates. Therefore, the system should provide statistical information of actual noise such as
+metric scores and steerable weights, so that users can not only
+track the previous selection history but also analyze the characteristics of identified noise to discover patterns. Users can utilize the
+pattern of existing noisy parallel corpora for the next tasks.
+
+182
+
+

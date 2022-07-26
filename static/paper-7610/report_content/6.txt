@@ -1,0 +1,128 @@
+The S ET-S TAT-M AP design also follows the rule of resource optimization. We organize the views side-by-side in a linear fashion,
+which creates a potential to provide (static or user interaction based)
+text summary beneath the display. In addition, a user can compare
+two S ET-S TAT-M AP visualizations by placing one on top of the other
+(Figure 3), which is useful to compare two map selections or two
+different datasets. Furthermore, we limit the number of categories
+visible simultaneously to maintain the system’s interactivity. The
+flow of colour and texture from ribbons to the rows and finally, to
+the map make relationships among multiple views apparent to the
+user, which is aligned with the rule of self-evidence. The rule of consistency can be observed from the synchronized view updates upon
+user interactions (axis reordering, row sorting and map selection).
+4
+
+are at 36 km spatial resolution) Most attributes are numeric values for
+each date and geolocation, and hence ideal to test the functionality of
+S ET-S TAT-M AP on a predominately numeric dataset. We examined
+a dataset over the year 2013 and aggregated (by taking average or
+summery depending on attribute type) the data records by month,
+which transformed the Date attribute into a Month attribute.
+Task Demonstration: To examine whether S ET-S TAT-M AP can
+reveal any useful information on this dataset, we initiated a collaboration with two environmental scientists: one within the university
+and another scientist from the Global Institute for Water Security.
+To describe the system to the scientists we planned to demonstrate
+the following tasks.
+Examining Pairwise Relation: Examine the Parallel Sets view and
+examine whether there is a potential relation between the attributes
+X and Y.
+Comparing Categories: Examine the last axis of the Parallel Sets
+view and compare these categories by sorting the statics columns.
+Spatial Comparison: Load two S ET-S TAT-M AP view and select
+two areas to examine the similarity and differences between them.
+Examining Attribute Composition: Consider a category on the
+last axis of the Parallel Sets view and examine the composition of
+the ribbons by examining colors and textures.
+Examining Spatial Distribution: Consider the map view and examine how the categories of the first two axes are distributed over
+the map.
+
+DATA P REPROCESSING AND I MPLEMENTATION
+
+We implemented our proposed solution as a JavaScript based web
+component, which is cross-platform, easy-to-distribute, and easily
+embeddable in any in any modern web application (e.g., in a React
+app or even in a pure HTML/CSS/JavaScript project) irrespective of
+whether it is using a front-end framework or not. We used D3.js [2]
+and Textures.js [4] JavaScript library to build interactive visualizations. We also used a tool chain called Stencil [3] to build framework
+independent web components. Our Parallel Sets design is a standalone web component. Parallel Sets and the statistics columns
+together form another web component. The map view can pass data
+to those views by properties, and obtain data from them by events.
+This makes it easy to synchronize the updates to all the views during
+an user interaction.
+The data is maintained using a single SQLite database file, containing a table with columns for all attributes (including latitude and
+longitude). We then use sql.js to query the SQLite file directly on
+the browser. We use SQL based queries to filter data based on users’
+map selection and compute necessary statistics on the fly. Thus the
+rendering time becomes directly proportional to the time to compute
+the statistics and the number of elements to be rendered. For large
+datasets, one can precompute the summary statistics and heatmap
+values into specialized data structures to improve scalability.
+5
+
+5.2
+
+U SE C ASES
+
+We demonstrate the S ET-S TAT-M AP technique using two use cases
+with datasets from totally different areas.
+5.1
+
+Collaborative Development
+
+After we demonstrated the system to the scientists (Figure 8), we observed the need for several meetings so that they become comfortable
+in using the systems. We set weekly one-hour meetings over three
+months so that they can suggest modifications to S ET-S TAT-M AP.
+Some major challenges that we noticed is that the experts took
+about three to four meetings before they could comprehend the
+system well enough to reason about it spontaneously. Initially, they
+had several questions on why the number of crossings increase as
+we move from the first to the later axes, and whether these crossings
+mean anything, and how they relate to the statistics column, what
+the colors in the statistics columns mean and so on. The Parallel Set
+design was not something that they were familiar with, and it was
+not straightforward for them to understand the connections among
+different views. It also took some time for the experts to recall the
+system interactions and effectively use S ET-S TAT-M AP.
+Based on the experts’ suggestion we refined the system to be used
+in a real-life setting (Figure 1). The experts wanted to add numerical
+axis at the bottom of the statistics columns, so that they can make
+the scientific reasoning and understand whether the data is being
+visualized meaningfully. They provided us with commonly used
+units for different meteorological variables and also they suggested
+color maps they are comfortable using. They preferred quartiles
+and simpler textures such as dotted ones over the line based textures
+as they felt it easier to understand (due to the smaller number of
+ribbons, less clutter and faster interactions).
+We modified the legends on the map view to include texture
+information based on their suggestions. They also suggested that the
+color maps for temperature should be different from precipitation
+and follow standard color maps for the system to be used as they
+expect. Hence we created a separate control panel along with a split
+view so that the comparison between two different spatial regions
+becomes easier (Figure 9).
+
+Meteorological Dataset
+
+Figure 8: Illustration for the components of a S ET-S TAT-M AP visualization before the collaborative development.
+
+Dataset description: This use case shows how an environmental
+scientist explored climate data using S ET-S TAT-M AP visualization.
+We use a Climate Forecast System Reanalysis (CFSR) database
+from the National Centers for Environmental Prediction (NCEP).
+Each record in the data consists of date, longitude, latitude, max
+temperature, min temperature, solar radiation, precipitation, relative
+humidity and wind speed. The longitude and latitudes of each data
+point is approximately 36 km away from the other data point (data
+
+5.3
+
+Experts’ Analysis
+
+We illustrate the usage of the system by describing a use case that
+was run by the experts (Figure 1). The experts used a hydroclimatic
+data from 2013 for the Canadian Prarieis Ecozone (CPE). The CPE
+is cropped by a polygon covering an area of approx. 700,000 sq km
+(270,000 sq miles).
+
+156
+
+

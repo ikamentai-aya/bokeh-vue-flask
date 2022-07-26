@@ -1,0 +1,128 @@
+R EFERENCES
+
+identify noise patterns. In addition, most participants (E1, E2, and S1–
+S4) expected that our back-translation technique in Text Compare
+View would reduce the time-cost for the inspection of noisy parallel
+corpora when handling illiterate language data. Furthermore, they
+said our system would be beneficial in the field. E1, E2, and E4
+asked about a plan to deploy our system as a real-world application.
+The participants also provided suggestions for further enhancement of our system. For example, E3 and E4 suggested adding and
+hiding metrics for customization. They wanted to see how noise data
+affects other metrics such as ROGUE and Perplexity, practically
+used in their actual field of work. Non-domain experts (S1, S2, S3)
+said it was challenging to use adjustable weights in Ranking view
+and Ruleset Relationship View without a detailed explanation of
+their purpose. Lastly, most participants commented on improving the
+usability of Text Compare View; they argued that the relatively small
+size of the view makes it hard to use. They propose to add “expand”
+function that can dynamically increase its size for better perception
+since the view is the most frequently used while inspecting noisy
+parallel corpora.
+7
+
+[1] F. Bane and A. Zaretskaya. Selecting the best data filtering method for
+nmt training. In Proceedings of Machine Translation Summit XVIII:
+Users and Providers Track, pp. 89–97, 2021.
+[2] S. Banerjee and A. Lavie. Meteor: An automatic metric for mt evaluation with improved correlation with human judgments. In Proceedings
+of the acl workshop on intrinsic and extrinsic evaluation measures for
+machine translation and/or summarization, pp. 65–72, 2005.
+[3] J. Bok, B. Kim, and J. Seo. Augmenting parallel coordinates plots with
+color-coded stacked histograms. IEEE Transactions on Visualization
+and Computer Graphics, 2020.
+[4] W. B. Cavnar, J. M. Trenkle, et al. N-gram-based text categorization.
+In Proceedings of SDAIR-94, 3rd annual symposium on document
+analysis and information retrieval, vol. 161175. Citeseer, 1994.
+[5] D. Cer, Y. Yang, S. yi Kong, N. Hua, N. Limtiaco, R. S. John, N. Constant, M. Guajardo-Cespedes, S. Yuan, C. Tar, Y.-H. Sung, B. Strope,
+and R. Kurzweil. Universal sentence encoder, 2018.
+[6] V. Dibia and Ç. Demiralp. Data2vis: Automatic generation of data
+visualizations using sequence-to-sequence recurrent neural networks.
+IEEE computer graphics and applications, 39(5):33–46, 2019.
+[7] S. Gratzl, A. Lex, N. Gehlenborg, H. Pfister, and M. Streit. Lineup:
+Visual analysis of multi-attribute rankings. IEEE transactions on
+visualization and computer graphics, 19(12):2277–2286, 2013.
+[8] S. Kandel, A. Paepcke, J. Hellerstein, and J. Heer. Wrangler: Interactive
+visual specification of data transformation scripts. In Proceedings of
+the SIGCHI Conference on Human Factors in Computing Systems, pp.
+3363–3372, 2011.
+[9] H. Khayrallah and P. Koehn. On the impact of various types of noise
+on neural machine translation. arXiv preprint arXiv:1805.12282, 2018.
+[10] Y. Kim, H. Jeon, Y.-H. Kim, Y. Ki, H. Song, and J. Seo. Visualization
+support for multi-criteria decision making in software issue propagation.
+In 2021 IEEE 14th Pacific Visualization Symposium (PacificVis), pp.
+81–85. IEEE, 2021.
+[11] P. Koehn, H. Hoang, A. Birch, C. Callison-Burch, M. Federico,
+N. Bertoldi, B. Cowan, W. Shen, C. Moran, R. Zens, et al. Moses: Open
+source toolkit for statistical machine translation. In Proceedings of the
+45th annual meeting of the association for computational linguistics
+companion volume proceedings of the demo and poster sessions, pp.
+177–180, 2007.
+[12] P. Koehn, H. Khayrallah, K. Heafield, and M. L. Forcada. Findings of
+the WMT 2018 shared task on parallel corpus filtering. In Proceedings
+of the Third Conference on Machine Translation: Shared Task Papers,
+pp. 726–739. Association for Computational Linguistics, Belgium,
+Brussels, Oct. 2018. doi: 10.18653/v1/W18-6453
+[13] T. Munz, D. Väth, P. Kuznecov, T. Vu, and D. Weiskopf. Visualinteractive neural machine translation. In Graphics Interface 2021,
+2021.
+[14] T. Munzner. Visualization analysis and design. CRC press, 2014.
+[15] M. Neves, A. J. Yepes, and A. Névéol. The scielo corpus: a parallel
+corpus of scientific publications for biomedicine. In Proceedings of the
+Tenth International Conference on Language Resources and Evaluation
+(LREC’16), pp. 2942–2948, 2016.
+[16] K. Papineni, S. Roukos, T. Ward, and W.-J. Zhu. Bleu: a method for
+automatic evaluation of machine translation. In Proceedings of the
+40th annual meeting of the Association for Computational Linguistics,
+pp. 311–318, 2002.
+[17] J. Park, J.-P. Hong, and J.-W. Cha. Korean language resources for everyone. In Proceedings of the 30th Pacific Asia conference on language,
+information and computation: Oral Papers, pp. 49–58, 2016.
+[18] M. Rikters, M. Fishel, and O. Bojar. Visualizing neural machine translation attention and confidence. The Prague Bulletin of Mathematical
+Linguistics, 109(1):39, 2017.
+[19] R. Sennrich, B. Haddow, and A. Birch. Improving neural machine translation models with monolingual data. arXiv preprint arXiv:1511.06709,
+2015.
+[20] G. Xu, Y. Ko, and J. Seo. Improving neural machine translation by
+filtering synthetic parallel data. Entropy, 21(12):1213, 2019.
+[21] B. Zhang, A. Nagesh, and K. Knight. Parallel corpus filtering via
+pre-trained language models. arXiv preprint arXiv:2005.06166, 2020.
+
+D ISCUSSION AND F UTURE W ORK
+
+Extensibility As suggested in the feedback from domain experts, it
+can be helpful to add additional metrics. In our system, nine metrics
+are encoded in distinct colors. Adding more metrics could hinder
+users from effectively distinguishing colors [14]. Additionally, the
+scroll interaction would be required as more columns are added in
+Ranking View. Thus, we plan to provide a customization option so
+that users can select a small number of metrics of their interest to
+configure a layout accordingly.
+Reliability of pre-trained model The universal sentence encoder,
+which we used for sentence embedding in the preprocessing step,
+is widely known for its good performance [5]. However, if the encoder has not learned a specific word or character in advance, the
+embedded vector may not have semantic meaning. Also, Google
+Translation used in our back-translation may mistranslate a sentence.
+Therefore, users should be aware of such reliability limitations.
+Scalability Generally, NMT training requires a very large size of
+data, but our system may cause low latency while handling a huge
+amount of data due to the performance issue; especially when users
+brush subset from PCP in Distribution View and adjust weight in
+Ranking View. Although we tested our system was able to cover
+100,000 size of parallel corpora, we should consider improving the
+performance of our system by serving back-end server for updating
+Ranking View.
+8
+
+C ONCLUSION
+
+We propose VANT, an interactive visual analytic system that assists users in exploring NMT data for detecting noise and refining
+parallel corpora. We derived various quality metrics based on machine learning techniques. The user study demonstrated its usefulness and effectiveness by showing that users can readily investigate
+and filter noisy sentence pairs within the corpora. We anticipate
+that users will be able to improve the quality of parallel corpora
+with our system and achieve a better performance of their own
+NMT model. The implementation of our system is available at
+https://vant-web.github.io/demo/.
+ACKNOWLEDGMENTS
+The authors wish to thank Soyoung Eom for heartful support. This
+work was supported by the National Research Foundation of Korea
+(NRF) grant funded by the Korea government (MSIT) (No. NRF2019R1A2C208906213) , and in part by Samsung Electronics.
+
+185
+
+

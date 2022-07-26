@@ -1,0 +1,153 @@
+Site Overview
+
+A
+
+Cluster labeling
+
+b5
+
+Search Panel
+
+b3
+
+c3
+
+C
+
+NER Panel
+
+B Ordination Panel
+Adjusting distance
+weights
+
+b2
+
+b6
+c1
+
+Keywords only
+
+b7
+
+c2
+
+Time only
+
+b8
+
+Entities only
+
+b1
+
+c4
+
+Changing entity type
+
+Location entities
+
+D
+
+b4
+
+Emotions Panel
+
+Organization entities
+
+d2
+
+d5
+
+d1
+
+d4
+
+People entities
+
+d3
+Toggling
+radial bars
+
+E
+
+Article Panel
+
+Figure 2: The News Kaleidoscope interface consists of five panels to support (A) article search, (B) overview visualizations, (C–D) detailed
+analysis, and (E) inspection of individual articles.
+
+investigation and reporting occurs [50]. Given a time range R from
+which a set of articles are queried, we compute the temporal distance
+date(a1 )−date(a2 )
+between articles a1 and a2 as 1 −
+. This distance
+R
+dt (a1 , a2 ) has a range between [0, 1].
+Aggregate Pairwise Distance. For a set of retrieved articles, the
+pairwise keyword, entity, and temporal distances are independently
+computed and combined into a single aggregate distance dist(a1 , a2 )
+which represents the overall similarity between two articles:
+
+constraint provides a “balanced” distribution of article sources, but
+has the potential to lead to “less relevant” results if a news event was
+not extensively covered by a site.
+(B) Ordination Panel. The ordination panel provides an
+overview of retrieved articles (DR2). (b1) Article are encoded as
+circles, and colored by news site, and laid out via dimensionality reduction using aggregate pairwise distances. News Kaleidoscope supports layout via multidimensional scaling (MDS) [27], t-SNE [34],
+and UMAP [37]. For the user studies, we employ MDS as it results
+in deterministic layouts, thus eliminating a potential confounding
+variable. Circles are clustered via k-means clustering, with cluster
+hulls rendered using bubble sets [11]. We are motivated to employ
+this approach as it provides a scalable view of the retrieved articles,
+intuitively using proximity and groupings between data points to
+indicate their similarity. (b2) At upper left, an area chart shows the
+temporal distribution of retrieved articles.
+(b3) At top, several widgets control display settings, including
+selecting the distance metric for cluster computation (either aggregate pairwise distance or x/y positioning), and updating the k value
+to change the number of clusters. A trio of sliders adjust the scaling
+weights for the aggregate pairwise distances (the wk , we , and wt values), which updates the layout in MDS plot (b4). (b5) Hovering on
+the k value input shows a tooltip that shows the silhouette score [42]
+for each value of k between 2 and 10 (a higher score indicates better
+separation between clusters), as a way to explain to non-technical
+users what constitutes “good” choices for k.
+Two additional overview plots are shown in (b6) and (b7). These
+two displays (placed in a tabbed panel) support comparative analysis
+at the news site-level and between clusters. (b6) The site overview
+tab shows a graph of all news sites with retrieved articles; edges indicate the overall keyword and entity similarity between the content
+of their stories. To provide a glimpse of each site’s reporting, the top
+four emotions for each site are plotted in a bar chart (labeled by total
+stories for each site, with bar colors based on the emotions panel’s
+color palette (d2)). This view provides a summary-level comparison
+of how news sites differ in their reporting on the current event. The
+bottom half of this tab shows the most popular keywords and entities
+for each site.
+(b7) The cluster labeling contains a heatmap showing (in rows)
+the top keywords from each cluster, while (in columns) clusters
+
+dist(a1 , a2 ) = wk × dk (a1 , a2 ) + we × de (a1 , a2 ) + wt × dt (a1 , a2 )
+Each distance metric is multiplied by a scaling weight (wk , we ,
+and wt ); these are interactively adjustable in News Kaleidoscope’s
+frontend interface, enabling a multi-faceted exploration of articles
+based on desired user semantics. For example, setting wk = 0 would
+mean that the keyword distance would have no effect on the aggregate distance. One advantage of this aggregate multi-weight
+heuristic is that new similarity metrics can easily be added as desired. For example, a new metric for “author similarity” could be
+computed by analyzing a the historical style or content of a writer.
+Clustering Articles by Emotional Style. When article subselections are made (DR3), News Kaleidoscope clusters article these
+articles by their emotional styles. To do this, the we calculate the
+pairwise similarity in emotional style for articles, and then cluster
+the articles using k-means clustering [35]. The similarity is the
+Euclidean distance using the precomputed 1 × 8 emotional vector.
+4.3 Frontend Interface
+Figure 2 shows an overview of News Kaleidoscope’s frontend interface. It consists of five linked panels (A–E), designed to support
+the tasks #1–6 described in Section 3. As a note, this image shows
+the final design of News Kaleidoscope that includes four additional
+features added based on participant feedback from Studies #1 and
+#2—(b5), (b6), (b7), and (d5)—which were evaluated in Study #3.
+(A) Search Panel. The search panel supports keyword-based
+searches for articles about news events (DR1). The user can set
+constraints/filters for date ranges, news sites, keywords, and the
+number of articles to retrieve. The user also has the option to return
+a uniform number of articles for each new sites: e.g., if 140 articles
+are retrieved for 14 sites, each site will return 10 articles. Such a
+
+134
+
+

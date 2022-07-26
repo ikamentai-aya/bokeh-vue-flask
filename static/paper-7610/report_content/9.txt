@@ -1,0 +1,108 @@
+Figure 13: (left) Texture cut-off issues. (right) noisy pattern created by
+a combination of overlapping textures.
+
+Figure 14: (left) Label overlapping. (middle) Adaptive labelling. (right)
+Mouseover interaction.
+
+likely to get split in every subsequent axes, bringing the axes with
+few categories earlier in the axes sequence may reduce the overplotting problem. It would be interesting to further investigate such
+conditions for a dataset to be effectively visualized using S ET-S TATM AP. In addition, we have identified a number of key factors that
+needs to be carefully considered when designing a S ET-S TAT-M AP
+visualization.
+Choice of axis: To effectively use S ET-S TAT-M AP, users need
+to understand the concept that the color and texture comes from the
+first and second axis, respectively, and the categories to be compared
+should be chosen as the last axis of the Parallel Sets. One option to
+ease the learning process, especially for non-scientific users, is to ask
+to identify important categories. For example, after loading the data,
+the system can ask to choose a categorical attribute (independent
+variable) over which the users would like to see the data pattern.
+This will be the last axis of the Parallel Sets view. After the user
+chooses the attribute, the system can ask to select the categorical
+and numerical attributes (dependent variables) of interest to populate
+the Parallel Sets and statistics column views. There can still be a
+steep learning curve to effectively use the numerical attribute as a
+categorical one. In the future, it would be interesting to investigate
+how the user’s learning rate affects knowledge discovery.
+Colors and opacity: One must add some transparency to the
+ribbons to provide users with a sense of connectedness. This also
+allows users to better perceive the line patterns that appears between
+adjacent axes. In a poorly designed color map some ribbon colors
+may interfere with its texture. A systematic way to choose colors
+would be to choose a dark color for texture and light colors for the
+ribbon color map, or vice versa. In our work we color the texture in
+gray and choose at most 8 other light colors from a perceptual color
+map. Ordering of the colors is also important as it helps users better
+understand the distribution of numeric ranges.
+Choice of texture: Ribbon texture is an important aspect of S ETS TAT-M AP design. While examining the ribbons intersecting a line
+interval, the textures of the ribbons can reveal the composition of
+the second axis categories. In a poorly designed texture map, thin
+ribbons may entirely miss the pattern or provide a partial pattern
+creating ambiguity. The problem of cut-off is illustrated in Figure 13(left), where the top ribbon can be interpreted as a cut-off
+cross or wave pattern. Similarly, The fourth ribbon from the top
+can be seen as a cut-off circle or wave pattern. Another problem
+of choosing complex patterns is that they are difficult to relate with
+numeric ranges, and overlapping ribbons makes the visualization
+cluttered by creating noisy patterns, as illustrated in Figure 13(right),
+which increase users’ cognitive load.
+Adaptive label size and mouse over: A S ET-S TAT-M AP design
+creates intervals of widely varied lengths. Therefore, some interval
+may be very thin, creating a problem for label placement, e.g.,
+see Figure 14(left). To best leverage the vertical space, a careful
+design must attempt to limit the number of category per axis that
+are visible simultaneously, and provide functionality such that the
+users can sort and scroll the category list. Furthermore, the label size
+should be adaptive to the length of the line to avoid visual occlusion
+(Figure 14(middle)), and allow users to inspect detailed information
+on mouse over (Figure 14(right)).
+Linear gradient color: The background of each cell in the statistics columns view is colored with a linear gradient. Such a linear
+
+gradient may not create a color range with a proper perceptual balance, i.e., people may perceive the width or strength of the colors
+differently than the underlying numeric values. One problem with
+multiple colors appears to be with numeric ranges, where the preferred color map is sequential or diverging. Since the adjacent colors
+in such a color map is perceptually close to each other, the linear
+gradient may make it harder to distinguish the color boundaries (Figure 15). For categorical color maps, one may obtain a background
+with multiple vertical stripes. We suggest minimal use of the number
+of colors since multiple stripes may produce unwanted visual effects
+(e.g., McCollough effect [16] or optical illusion) over prolonged use.
+Further investigation on how human perceive such linear gradient in
+a visual analytics context, or whether the benefit of gradient exceeds
+the potential risk can be an exciting avenue of research.
+
+Figure 15: Linear gradient makes the boundaries harder to distinguish.
+
+Adaptive heatmap: The S ET-S TAT-M AP visualization uses a
+heatmap view on the map, where the cells are colored and textured
+based on the first and second axis. If both these axes are numerical,
+then for each cell one can choose the color and text based on the
+average value. However, for categorical attributes, it needs to be
+based on a summary statstic. In our design, we pick the color
+and texture based on the high frequent categories. However, based
+on the data (e.g., when all categories are equally frequent) this
+may create misleading representation. One may partially improve
+the problem by using an adaptive quadtree-based heatmap or by
+providing complex glyphs (e.g., pie charts). However, a conscious
+investigation is required to shed more light into this situation.
+Perceptually-motivated Parallel Sets: Although we currently used
+the first two axes for color and texture augmentation, it would be
+interesting to investigate ways to extend this to more axes. We believe that our effort for stylizing ribbons to analyze the distribution
+of a combination of attributes may potentially be extended further
+by leveraging the idea of perceptually-motivated visualization [23]
+by mapping the categories of different axes with different perceptual properties. An effective perceptually-motivated visualization is
+harder to design and also to interpret. However, such a visualization
+can still be valuable in an infographic setting, as well as to examine
+or extend the boundary of human perception.
+8 C ONCLUSION
+Although Parallel Coordinates and Parallel Sets visualizations are
+widely used to interactively explore numerical and categorical
+datasets, respectively, there still exist opportunities to explore new
+methods to visualize spatial data with mixed numeric and categorical
+attributes. In this paper we propose S ET-S TAT-M AP that leverages
+the idea of multiple coordinated views. The design harmoniously
+blend a Parallel Sets view, a statistics columns view and a map view
+to visualize mixed data in a linear fashion. Our design allows users to
+explore the pairwise attribute relationships, statistical summaries and
+
+159
+
+
